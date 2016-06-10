@@ -1,16 +1,10 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
-    {% include head.html %}
+<html lang="en" >
+	<head>
+		<meta charset="utf-8">
+		<title> Tech pub </title>
+	</head>
     <body>
-        {% include svg-icons.html %}
-        {% include header-default.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
+           {{ content }}
     </body>
 </html>
