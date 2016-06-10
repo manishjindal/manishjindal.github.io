@@ -16,10 +16,6 @@ html {
 	list-style-type:none;
 }
 
-.nav > li {
-	display: inline-block;
-}
-
 .nav-top{
 	font-size:1.5px;
 }
