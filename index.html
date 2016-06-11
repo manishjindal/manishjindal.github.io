@@ -60,8 +60,8 @@ layout: w3school
   </div>
 
   <div class="w3-row-padding">
+    {% for data in site.data.home-page %}
     <div class="w3-third w3-container w3-margin-bottom">
-     {% for data in site.data.home-page %}
       <img src="{{site.baseurl}}/assets/img/{{data.img}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">  
         <li>
@@ -69,8 +69,8 @@ layout: w3school
         	{{data.content}}
         </li>	
       </div>
-     {% endfor %}
     </div>
+    {% endfor %}
   </div>
   
   <!-- Pagination -->
