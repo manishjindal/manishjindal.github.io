@@ -1,27 +1,33 @@
 -   title: Blogs 
     folder: blogs
+    img: projects.jpg
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
 
 -   title: Projects
     folder: projects
+    img: blogs.jpg
     content: 'This sections has all the projects which includes different different programming language and different different technology - browse for more details'
     
 -   title: SPOJ
     folder: SPOJ Solutions
+    img: spoj.jpg
     content: 'Many spoj question solution with category'
 
 
 -   title: Programming Language
     folder: programming language
+    img: language.jpg
     content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
 
 
 -   title: Tools
     folder: tools
+    img: tools.jpg
     content: 'Different tools used in industry and their usage'
 
 
 -   title: Popular Technology
     folder: popular technology
+    img: latesttechnology.jpg
     content: 'New technology in market and why we should opt these techonology ?'
     
