@@ -4,7 +4,7 @@ layout: default
 
 <p>All projects can be found here </p>
 <ul>
-	{% for post in site.categories.java%}
+	{% for post in site.categories.java limit:2 %}
 	<li>
 		<a href="">{{post.title}}</a>
 		<p>{{post.meta}}</p>
