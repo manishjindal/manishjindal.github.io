@@ -16,8 +16,8 @@
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
     url: Blogs
 
--   title: Programming Language
-    folder: programming language
+-   title: Programming
+    folder: programming
     img: language.jpg
     content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
     url: Programming%20Language
@@ -28,8 +28,8 @@
     content: 'Different tools used in industry and their usage'
     url: Tools
 
--   title: Popular Technology
-    folder: popular technology
+-   title: Technology
+    folder: technology
     img: latesttechnology.jpg
     content: 'New technology in market and why we should opt these techonology ?'
     url: Popular%20Technologies
