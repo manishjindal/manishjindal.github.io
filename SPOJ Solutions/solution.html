@@ -21,10 +21,7 @@ function getQueryStrings() {
 
   return assoc; 
 } 
-alert('hi2');
-var urlparam = getQueryStrings();
-var myParam = urlparam['filename'];
-alert(myParam);
+
 </script>
 
  <!-- First Photo Grid-->
@@ -33,8 +30,17 @@ alert(myParam);
     		<div class="w3-container w3-border w3-sand">
     			{% assign pageurl=page.url %}
     			<%=Request.QueryString("filename")%>
- 				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%"></iframe></p>
+ 				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%" id="abc"></iframe></p>
 			</div>
   </div>
+
+  <script type="text/javascript">
+  	alert('hi2');
+var urlparam = getQueryStrings();
+var myParam = urlparam['filename'];
+alert(myParam);
+document.getElementById('abc').src=myParam;
+
+  </script>
 
  
