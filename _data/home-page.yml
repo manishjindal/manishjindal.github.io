@@ -2,31 +2,34 @@
     folder: projects
     img: projects.jpg
     content: 'This sections has all the projects which includes different different programming language and different different technology - browse for more details'
+    url: Projects
 
 -   title: SPOJ
     folder: SPOJ Solutions
     img: spoj.jpg
     content: 'Many spoj question solution with category'
+    url: SPOJ%20Solutions
 
 -   title: Blogs
     folder: blogs
     img: blogs.jpg
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
+    url: Blogs
 
 -   title: Programming Language
     folder: programming language
     img: language.jpg
     content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
-
-
+    url: Programming%20Language
 
 -   title: Tools
     folder: tools
     img: tools.jpg
     content: 'Different tools used in industry and their usage'
+    url: Tools
 
 -   title: Popular Technology
     folder: popular technology
     img: latesttechnology.jpg
     content: 'New technology in market and why we should opt these techonology ?'
-    
+    url: Popular%20Technologies
