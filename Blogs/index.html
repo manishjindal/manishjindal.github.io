@@ -2,4 +2,23 @@
 layout: w3school
 ---
 
-<h1>Blogs</h1>
+<h1>Projects</h1>
+
+ <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    {% for data in site.data.projects %}
+    		<div class="w3-card-4">
+				<header class="w3-container w3-blue">
+				  <h1><i>Subject: - {{data.subject}}</i></h1>
+				</header>
+				
+				<div class="w3-container">
+				  <p>Short Description:- {{data.description}}</p>
+				</div>
+				
+				<footer class="w3-container w3-blue">
+				  <h5>Solution:- <a href="../{{site.baseurl}}/Projects/projects/">folder</a></h5>
+				</footer>	
+			</div>
+    {% endfor %}
+  </div>
