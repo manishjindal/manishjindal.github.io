@@ -3,8 +3,20 @@ layout: w3school
 ---
  <div class="w3-row-padding">
 
+<script type="text/javascript">
+	 document.getElementById('files').onchange = function(e) {
+	 			alert("hi");
+				  var files = e.target.files; // FileList
+				  for (var i = 0, f; f = files[i]; ++i)
+				    console.debug(files[i].webkitRelativePath);
+				}​
+
+</script>
     		<div class="w3-container w3-border w3-sand">
- 				 <p><iframe src="{{site.baseurl}}/Projects/projects" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe></p>
+ 				<!-- <p><iframe src="{{site.baseurl}}/Projects/projects" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe></p> -->
+ 				 <input type="file" name="file_input[]" id="file_input" multiple webkitdirectory="{{site.baseurl}}/Projects/projects">
+
+ 				
 			</div>
   </div>
   </br>
