@@ -2,24 +2,40 @@
 layout: w3school
 active: SPOJ Solutions
 ---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.js" type="text/javascript"><link rel="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.css"></script>
 
+<script type="javascript">
+alert('hi');
+function getQueryStrings() { 
+  var assoc  = {};
+  var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+  var queryString = location.search.substring(1); 
+  var keyValues = queryString.split('&'); 
+
+  for(var i in keyValues) { 
+    var key = keyValues[i].split('=');
+    if (key.length > 1) {
+      assoc[decode(key[0])] = decode(key[1]);
+    }
+  } 
+
+  return assoc; 
+} 
+alert('hi2');
+var urlparam = getQueryStrings();
+var myParam = urlparam['filename'];
+alert(myParam);
+</script>
 
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
 
-  			<form accept-charset="UTF-8" action="" method="GET">
-
-				<input type="text" name="tourName" value="">
-				<input type="text" name="tourPrice" value="">
-				<input type="email" name="email" placeholder="Your Email">
-				<input type="text" name="name" placeholder="Your Name">
-				<button type="submit">Submit</button>
-			</form>
-
     		<div class="w3-container w3-border w3-sand">
     			{% assign pageurl=page.url %}
-    			<h1>{{pageurl}}</h1>
+    			alert({{pageurl}})
     			<%=Request.QueryString("filename")%>
  				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%"></iframe></p>
 			</div>
   </div>
+
+ 
