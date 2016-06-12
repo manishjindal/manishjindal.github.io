@@ -1,17 +1,17 @@
--   title: Blogs 
-    folder: blogs
+-   title: Projects 
+    folder: projects
     img: projects.jpg
-    content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
+    content: 'This sections has all the projects which includes different different programming language and different different technology - browse for more details'
 
 -   title: SPOJ
     folder: SPOJ Solutions
     img: spoj.jpg
     content: 'Many spoj question solution with category'
 
--   title: Projects
-    folder: projects
+-   title: Blogs
+    folder: blogs
     img: blogs.jpg
-    content: 'This sections has all the projects which includes different different programming language and different different technology - browse for more details'
+    content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
 
 -   title: Programming Language
     folder: programming language
