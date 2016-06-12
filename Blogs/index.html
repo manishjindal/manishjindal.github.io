@@ -7,8 +7,8 @@ layout: w3school
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for data in site.data.blogs %}
-    		<div class="w3-card-4">
-				<header class="w3-container w3-blue">
+    		<div class="w3-card-4 w3-hover-shadow">
+				<header class="w3-container w3-green">
 				  <h1><i>Subject: - {{data.subject}}</i></h1>
 				</header>
 				
@@ -16,7 +16,7 @@ layout: w3school
 				  <p>Short Description:- {{data.description}}</p>
 				</div>
 				
-				<footer class="w3-container w3-blue">
+				<footer class="w3-container w3-green">
 				  <h5>Solution:- <a href="../{{site.baseurl}}/Projects/projects/">folder</a></h5>
 				</footer>	
 			</div>
