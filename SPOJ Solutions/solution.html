@@ -7,7 +7,8 @@ active: SPOJ Solutions
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
 
-  			<form accept-charset="UTF-8" action="" method="POST">
+  			<form accept-charset="UTF-8" action="" method="GET">
+
 				<input type="text" name="tourName" value="">
 				<input type="text" name="tourPrice" value="">
 				<input type="email" name="email" placeholder="Your Email">
@@ -18,6 +19,7 @@ active: SPOJ Solutions
     		<div class="w3-container w3-border w3-sand">
     			{% assign pageurl=page.url %}
     			<h1>{{pageurl}}</h1>
+    			<%=Request.QueryString("filename")%>
  				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%"></iframe></p>
 			</div>
   </div>
