@@ -24,11 +24,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <p class="w3-text-grey">Manish Jindal</p>
   </div>
   <a href="{{site.baseurl}}/" 
-  		class="w3-padding {% if page.url == '/' %}w3-text-teal{% endif %}">HOME</a> 
+  		class="w3-padding {% if page.url == '' %}w3-text-teal{% endif %}">HOME</a> 
   <a href="{{site.baseurl}}/about.html" 
   		class="w3-padding {% if page.url == '/about.html' %}w3-text-teal{% endif %}">ABOUT</a> 
   <a href="{{site.baseurl}}/Projects" 
-  		class="w3-padding {% if page.url == '/Projects' %}w3-text-teal{% endif %}">Projects</a>
+  		class="w3-padding {% if page.url == '/Projects/' %}w3-text-teal{% endif %}">Projects</a>
   <a href="{{site.baseurl}}/SPOJ%20Solutions" 
   		class="w3-padding {% if page.url == '/SPOJ%20Solutions/' %}w3-text-teal{% endif %}">SPOJ</a> 
   <a href="{{site.baseurl}}/Blogs" 
