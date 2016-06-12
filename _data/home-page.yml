@@ -13,10 +13,6 @@
     img: spoj.jpg
     content: 'Many spoj question solution with category'
 
--   title: Tools
-    folder: tools
-    img: tools.jpg
-    content: 'Different tools used in industry and their usage'
 
 -   title: Programming Language
     folder: programming language
@@ -24,6 +20,12 @@
     content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
 
 
+
+-   title: Tools
+    folder: tools
+    img: tools.jpg
+    content: 'Different tools used in industry and their usage'
+    
 -   title: Popular Technology
     folder: popular technology
     img: latesttechnology.jpg
