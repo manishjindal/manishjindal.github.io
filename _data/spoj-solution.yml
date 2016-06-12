@@ -10,28 +10,28 @@
     problem: ABCD - Colours A, B, C, D
     description: 'http://www.spoj.com/problems/ABCD/'
     solution: "solution is here--1-- "
-    download: "sumOfDivisiors.txt"
+    download: "ABCD.txt"
 
 -   title: SPOJ 
     folder: blogs
     problem: ABCDEF - ABCDEF
     description: 'http://www.spoj.com/problems/ABCDEF/'
     solution: "solution is here--1-- "
-    download: "sumOfDivisiors.txt"
+    download: "ABCDEF.txt"
 
 -   title: SPOJ 
     folder: blogs
     problem: ABCPATH - ABC Path
     description: 'http://www.spoj.com/problems/ABCPATH/'
     solution: "solution is here--1-- "
-    download: "sumOfDivisiors.txt"
+    download: "ABCDPATH.txt"
 
 -   title: SPOJ 
     folder: blogs
     problem: ABSP1 - abs(a-b) I
     description: 'http://www.spoj.com/problems/ABSP1/'
     solution: "solution is here--1-- "
-    download: "sumOfDivisiors.txt"
+    download: "ABSP1.txt"
 
 -   title: SPOJ 
     folder: blogs
