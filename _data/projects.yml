@@ -1,36 +1,46 @@
 -   title: SPOJ 
     folder: projects
-    Subject: ABA12D - Sum of divisors!
-    description: 'http://www.spoj.com/Subjects/ABA12D/'
-    solution: "solution is here--1-- "
+    Subject: Wikipedia Parsing and Indexing
+    description: 'Parsed Wikipedia 43 GB dataset to create index based on tf-idf ranking and created a searching interface to get top results for the user query on any general term. Java, XML, IRE(Information Retrieval and Extraction) techniques'
+    url: ""
+    tags: "solution is here--1-- "
 
 -   title: SPOJ 
     folder: projects
-    Subject: ABCD - Colours A, B, C, D
-    description: 'http://www.spoj.com/Subjects/ABCD/'
-    solution: "solution is here--1-- "
+    Subject: Placement Portal
+    description: 'Portal to provide automation of the placement related information and activities
+using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
+    url: "https://blues.pythonanywhere.com/placement_portal/default/home "
+    tags: 
 
 -   title: SPOJ 
     folder: projects
-    Subject: ABCDEF - ABCDEF
-    description: 'http://www.spoj.com/Subjects/ABCDEF/'
-    solution: "solution is here--1-- "
+    Subject: Database
+    description: 'Created a simple database application that facilitated management of page (database page buffer), loading of pages to page buffer, insertion into database, select and create queries, handling various options and functionality of select query (condition, ordering, aliasing etc), handling natural joins of two tables as well as join cost computation.'
+    url: "https://blues.pythonanywhere.com/placement_portal/default/home "
+    tags: 
 
 -   title: SPOJ 
     folder: projects
-    Subject: ABCPATH - ABC Path
-    description: 'http://www.spoj.com/Subjects/ABCPATH/'
-    solution: "solution is here--1-- "
+    Subject: Classification of Tweets
+    description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
+    url: "https://blues.pythonanywhere.com/placement_portal/default/home "
+    tags: 
+        
+-   title: SPOJ 
+    folder: projects
+    Subject: Intrusion Detection System
+    description: 'Minor Project to check security related issues .
+System was able to check if the person who is accessing account is an intruder or is a normal user.'
+    url: "https://blues.pythonanywhere.com/placement_portal/default/home "
+    tags: 
 
 -   title: SPOJ 
     folder: projects
-    Subject: ABSP1 - abs(a-b) I
-    description: 'http://www.spoj.com/Subjects/ABSP1/'
-    solution: "solution is here--1-- "
+    Subject: Clean India Android App
+    description: 'Idea was building an app which is capable of uploading videos images of crime scene , garbage , bribe , etc . which could be access by higher authorities so that they can take an action on that.
 
--   title: SPOJ 
-    folder: projects
-    Subject: ABSYS - Anti-Blot System
-    description: 'http://www.spoj.com/Subjects/ABSYS/'
-    solution: "solution is here--1-- "
-
+As well as provided a web interface for the administration.
+Images and video could be taken by the app itself and images were able to store the location where they were taken.'
+    url: "https://blues.pythonanywhere.com/placement_portal/default/home "
+    tags: 
