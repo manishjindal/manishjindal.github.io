@@ -1,21 +1,153 @@
-#include<iostream>
-#include<cmath>
-#include<algorithm>
+#include<stdio.h>
+#include<stdlib.h>
+#include<queue>
+#include<map>
+
+
 using namespace std;
+
+queue<int  > myqueue;
+map<int , int > mymap;
+
+map<int,int>::iterator it = mymap.begin();	
+
+
+int checkInMap(int value)
+{
+	it = mymap.find(value);
+	if(it == mymap.end())
+		return -1;
+	else
+		return 1;
+}
+
+
+char input[110][110];
 
 int main()
 {
- int arr[]={2, 4, 9, 16, 25, 64, 289, 729, 1681, 2401, 3481, 4096, 5041, 7921, 10201, 15625, 17161, 27889, 28561, 29929, 65536, 83521, 85849, 146689, 262144, 279841, 458329, 491401, 531441, 552049, 579121, 597529, 683929, 703921, 707281, 734449, 829921,1190281 };  
-int t;
- cin>>t;
- int a,b;
- while(t--)
- {
-         cin>>a>>b;
-         int a1 = 0,a2=0;
-         while(arr[a1++]<a);
-         while(arr[a2++]<b);
-         cout<<a2-a1<<endl; 
- }  
- return 0;
+	int H , W ,i,j,result,row,col,testCase=1;
+	char ch;
+	
+	while(1)
+	{
+		scanf("%d%d",&H,&W);
+		if(H== 0 && W==0)
+			break;
+		
+		getchar();
+		for(i=0 ;i <H ;i++)
+		{
+			for(j =0 ;j <W ;j++)
+			{
+				input[i][j] = getchar();
+				if(input[i][j] == 'A')
+					myqueue.push(i*W + j);
+			}
+			getchar();
+		}
+
+		if(myqueue.empty())
+		{
+			printf("Case %d: 0\n",testCase);
+			
+		}
+		else
+		{
+			while(!myqueue.empty())
+			{
+				row = myqueue.front() / W;
+				col = myqueue.front() % W;
+				ch = input[row][col];
+
+				if(row+1 < H && input[row+1][col] == ch + 1)
+				{
+					if(checkInMap((row+1) * W + col) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row+1) * W + col,1) );
+						myqueue.push((row+1) * W + col);
+
+					}
+				}
+
+				if(row-1 >=0 && input[row-1][col] == ch + 1)
+				{
+					if(checkInMap((row-1) * W + col) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row-1) * W + col,1) );
+						myqueue.push((row-1) * W + col);
+					}
+				}
+
+
+				if(row+1 < H && col +1 < W && input[row+1][col+1] == ch + 1)
+				{
+					if(checkInMap((row+1)*W + col + 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row+1)*W + col + 1,1) );
+						myqueue.push((row+1)*W + col + 1);
+					}
+				}
+
+
+				if(row+1 < H && col-1 >= 0 &&  input[row+1][col-1] == ch + 1)
+				{
+					if(checkInMap((row+1)*W + col - 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row+1)*W + col - 1,1) );
+						myqueue.push((row+1)*W + col - 1);
+					}
+				}
+
+
+				if(row -1 >=0 && col +1 < W && input[row-1][col+1] == ch + 1)
+				{
+					if(checkInMap((row-1)*W + col + 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row-1)*W + col + 1,1) );
+						myqueue.push((row-1)*W + col + 1);
+					}
+				}
+
+
+				if(row -1 >=0 && col - 1 >= 0 && input[row-1][col-1] == ch + 1)
+				{
+					if(checkInMap((row - 1)*W + col - 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>((row - 1)*W + col - 1,1) );
+						myqueue.push((row - 1)*W + col - 1);
+					}
+				}
+
+
+				if(col+1 < W && input[row][col+1] == ch + 1)
+				{
+					if(checkInMap(row * W + col + 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>(row * W + col + 1 ,1) );
+						myqueue.push(row * W + col + 1 );
+					}
+				}
+
+
+				if(col-1 >= 0 && input[row][col-1] == ch + 1)
+				{
+					if(checkInMap(row * W + col - 1) == -1)
+					{
+						mymap.insert(pair<long long int,int>(row * W + col - 1,1) );
+						myqueue.push(row * W + col - 1);
+					}
+				}
+				myqueue.pop();
+			}
+			result = ch - 'A' + 1;
+			//printf("%d\n",result);
+			printf("Case %d: %d\n",testCase,result);
+			mymap.clear();
+		}
+		testCase++;
+	}
+	return 0;
+
 }
+

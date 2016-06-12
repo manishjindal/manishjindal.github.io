@@ -5,22 +5,28 @@ active: SPOJ Solutions
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.js" type="text/javascript"><link rel="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.css"></script>
 
 <script type="text/javascript">
-alert('hi');
-function getQueryStrings() { 
-  var assoc  = {};
-  var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
-  var queryString = location.search.substring(1); 
-  var keyValues = queryString.split('&'); 
-
-  for(var i in keyValues) { 
-    var key = keyValues[i].split('=');
-    if (key.length > 1) {
-      assoc[decode(key[0])] = decode(key[1]);
-    }
-  } 
-
-  return assoc; 
-} 
+	
+	function getQueryStrings() { 
+	  var assoc  = {};
+	  var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+	  var queryString = location.search.substring(1); 
+	  var keyValues = queryString.split('&'); 
+	
+	  for(var i in keyValues) { 
+	    var key = keyValues[i].split('=');
+	    if (key.length > 1) {
+	      assoc[decode(key[0])] = decode(key[1]);
+	    }
+	  } 
+	
+	  return assoc; 
+	} 
+	
+	
+	var urlparam = getQueryStrings();
+	var myParam = urlparam['filename'];
+	
+	document.getElementById('soultionfilename').src='/SPOJ%20Solutions/solutions/'+myParam;
 
 </script>
 
@@ -30,17 +36,9 @@ function getQueryStrings() {
     		<div class="w3-container w3-border w3-sand">
     			{% assign pageurl=page.url %}
     			<%=Request.QueryString("filename")%>
- 				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%" id="abc"></iframe></p>
+ 				 <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/sumOfDivisiors.txt" frameborder="0" height="400" width="95%" id="soultionfilename"></iframe></p>
 			</div>
   </div>
 
-  <script type="text/javascript">
-  	alert('hi2');
-var urlparam = getQueryStrings();
-var myParam = urlparam['filename'];
-alert(myParam);
-document.getElementById('abc').src='/SPOJ%20Solutions/solutions/'+myParam;
-
-  </script>
 
  

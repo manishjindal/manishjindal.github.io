@@ -1,21 +1,83 @@
 #include<iostream>
-#include<cmath>
 #include<algorithm>
+#include<stdio.h>
 using namespace std;
-
+int a1[109],t;
+int abc[1000009],def[1000009] ;
 int main()
 {
- int arr[]={2, 4, 9, 16, 25, 64, 289, 729, 1681, 2401, 3481, 4096, 5041, 7921, 10201, 15625, 17161, 27889, 28561, 29929, 65536, 83521, 85849, 146689, 262144, 279841, 458329, 491401, 531441, 552049, 579121, 597529, 683929, 703921, 707281, 734449, 829921,1190281 };  
-int t;
- cin>>t;
- int a,b;
- while(t--)
- {
-         cin>>a>>b;
-         int a1 = 0,a2=0;
-         while(arr[a1++]<a);
-         while(arr[a2++]<b);
-         cout<<a2-a1<<endl; 
- }  
- return 0;
+   
+       int a,b,c,d,e,f;
+    while( scanf("%d",&t)!=EOF)
+    {
+              
+              for(int i=0;i<t;i++)
+              {
+                    scanf("%d",&a1[i]);  
+              }
+                      
+    
+            int sum=0,ind1=0,ind2=0;
+            for(int i=0;i<t;i++)
+            {
+                    for(int j=0;j<t;j++)
+                    {
+                            for(int k=0;k<t;k++)
+                            {
+                                    a=a1[i];
+                                    b=a1[j];
+                                    c=a1[k];
+                                    d=a1[i];
+                                    e=a1[j];
+                                    f=a1[k];
+                                   // cout<<a<<" "<<b<<" "<<c<<" "<<d<<" "<<e<<" "<<f<<" "<<endl;
+                                    abc[ind1++]=a*b+c;
+                                   if(d!=0){
+                                    def[ind2++]=d*(e+f);
+                                   // cout<<"in"<<def[ind2-1]<<endl;
+                                    }
+                                   
+                            }        
+                            
+                    }        
+                    
+            }
+    
+            sort(abc,abc+ind1);
+            sort(def,def+ind2);
+            int i=0,j=0;
+            
+            for( ;i<ind1 && j<ind2 ;)
+            {
+                    
+                            if(abc[i]==def[j])
+                            {
+                                  // cout<<"i="<<i<<" j="<<j<<endl; 
+                                             
+                                   int count1=0,count2=0;           
+                                  while(j<ind2 && abc[i]==def[j] )
+                                  {
+                                               j++;
+                                        count1++;                       
+                                  }  
+                                  //cout<<"i="<<i<<" j="<<j<<endl; 
+                                  while(i<ind1 && abc[i]==def[j-1] )
+                                  {
+                                               i++;
+                                              count2++;                                      
+                                  }         
+                                      //cout<<"count1="<<count1<<" count2="<<count2<<endl;        
+                                  sum+=count1*count2;
+                            }
+                            else if(abc[i]<def[j])
+                            i++;
+                            else
+                            j++;
+                                   
+            }
+            
+            printf("%d\n",sum);
+    
+    }
+    return 0;
 }
