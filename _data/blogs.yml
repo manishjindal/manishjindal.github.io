@@ -40,23 +40,6 @@ Images and video could be taken by the app itself and images were able to store 
     url: "android.html"
     tags: 
 
-
--   title: JAVA 
-    img: java.jpg
-    subject: Wikipedia Parsing and Indexing
-    description: 'Parsed Wikipedia 43 GB dataset to create index based on tf-idf ranking and created a searching interface to get top results for the user query on any general term. Java, XML, IRE(Information Retrieval and Extraction) techniques'
-    url: "java-blogs.html"
-    tags: "solution is here--1-- "
-
--   title: Python 
-    img: python.png
-    subject: Placement Portal
-    description: 'Portal to provide automation of the placement related information and activities
-using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
-    url: "python-blogs.html"
-    tags: 
-
-
 -   title: Machine Learning 
     img: mclearning.png
     subject: Classification of Tweets
@@ -65,13 +48,4 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     tags: 
 
 
--   title: Android 
-    img: Android.jpg
-    subject: Clean India Android App
-    description: 'Idea was building an app which is capable of uploading videos images of crime scene , garbage , bribe , etc . which could be access by higher authorities so that they can take an action on that.
-
-As well as provided a web interface for the administration.
-Images and video could be taken by the app itself and images were able to store the location where they were taken.'
-    url: "android.html"
-    tags: 
 
