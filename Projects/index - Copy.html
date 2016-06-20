@@ -1,0 +1,24 @@
+---
+layout: w3school
+active: Projects
+---
+
+ <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    {% for data in site.data.projects %}
+    		<div class="w3-card-4">
+				<header class="w3-container w3-khaki w3-hover-shadow">
+				  <h1><i>Subject: - {{data.subject}}</i></h1>
+				</header>
+				
+				<div class="w3-container w3-white">
+				  <p>Short Description:- {{data.description}}</p>
+				</div>
+				
+				<footer class="w3-container w3-white">
+				  <h5>Solution:- <a href="{{site.baseurl}}/Projects/projects.html">folder</a></h5>
+				</footer>	
+			</div>
+			</br>
+    {% endfor %}
+  </div>
