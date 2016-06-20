@@ -58,7 +58,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
 
 
 -   title: Machine Learning 
-    img: machineLearning.jpg
+    img: mclearning.png
     subject: Classification of Tweets
     description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
     url: "machineLearning-blogs.html"
