@@ -40,3 +40,13 @@ Images and video could be taken by the app itself and images were able to store 
     url: "android.html"
     tags: 
 
+
+-   title: Android 
+    img: Android.jpg
+    subject: Clean India Android App
+    description: 'Idea was building an app which is capable of uploading videos images of crime scene , garbage , bribe , etc . which could be access by higher authorities so that they can take an action on that.
+
+As well as provided a web interface for the administration.
+Images and video could be taken by the app itself and images were able to store the location where they were taken.'
+    url: "android.html"
+    tags: 
