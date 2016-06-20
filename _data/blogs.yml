@@ -22,6 +22,13 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     tags: 
 
 
+-   title: Machine Learning 
+    img: machineLearning.jpg
+    subject: Classification of Tweets
+    description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
+    url: "machineLearning-blogs.html"
+    tags: 
+
 
 -   title: Android 
     img: Android.jpg
@@ -31,12 +38,5 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
 As well as provided a web interface for the administration.
 Images and video could be taken by the app itself and images were able to store the location where they were taken.'
     url: "android.html"
-    tags: 
-
--   title: Machine Learning 
-    img: machineLearning.jpg
-    subject: Classification of Tweets
-    description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
-    url: "machineLearning-blogs.html"
     tags: 
 
