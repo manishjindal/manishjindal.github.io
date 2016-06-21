@@ -8,8 +8,9 @@ active: Projects
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="{{site.baseurl}}/assets/img/{{data.img}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">  
-        	<p><b>{{data.subject}}</b></p>
-        	<p>{{data.description}}</p>
+          <p><a href="{% capture url %}filename={{data.detailedDescription}}{% endcapture %}{{site.baseurl}}/Projects/projects/projectdescription.html?{{ url }}">{{data.subject}}</a></p>
+        	<!--<p><b>{{data.subject}}</b></p>-->
+        	<p>{{data.shortdescription}}</p>
       </div>
     </div>
     {% endfor %}
