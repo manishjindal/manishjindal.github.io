@@ -16,7 +16,7 @@
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice'
     url: Blogs
 
--   title: Programming
+-   title: Programming Problems
     folder: programming
     img: language.jpg
     content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
