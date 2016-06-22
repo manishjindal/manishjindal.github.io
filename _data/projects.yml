@@ -19,7 +19,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     subject: Database
     shortdescription: 'Created a simple database application that facilitated management of page (database page buffer), loading of pages to page buffer, insertion into database, select and create queries, handling various options and functionality of select query (condition, ordering, aliasing etc), handling natural joins of two tables as well as join cost computation.'
     detailedDescription: ""
-    url: " "
+    url: "Database/list.txt"
     tags: 
 
 -   title: Machine Learning 

@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int j=50;
+for(int i=1000;i>0;i--)
+{
+	if(j==0)
+		j=50;
+	cout<<j<<","<<i<<endl;
+	j--;
+}
+
+}

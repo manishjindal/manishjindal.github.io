@@ -1,0 +1,35 @@
+PAGESIZE 1024
+NUM_PAGES 1024
+PATH_FOR_DATA data
+BEGIN
+R
+a,int
+b,int
+END
+BEGIN
+S
+b,int
+c,int
+END
+BEGIN
+T
+c,int
+d,int
+END
+BEGIN
+U
+a,int
+d,int
+END
+BEGIN
+employee
+empid,integer
+empname,varchar
+deptid,integer
+END
+BEGIN
+dept
+id,integer
+deptname,varchar
+END
+
