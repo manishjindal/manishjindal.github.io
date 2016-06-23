@@ -9,7 +9,15 @@ category: IO
 
 sub readFromOneFileAndToWriteAnotherFile {
 
-	// No function defination
+	open(READING_FROM,"./fileToRead.txt");
+	open(WRITTING_TO,">./fileToWrite.txt");
+	
+	while(<READING_FROM>) {
+			print $_;
+			print WRITTING_TO "$_\n";
+		}
+	close READING_FROM;
+	close WRITTING_TO;
 }
 
 readFromOneFileAndToWriteAnotherFile();
