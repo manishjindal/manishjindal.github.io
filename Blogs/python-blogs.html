@@ -73,10 +73,10 @@ active: Python Blogs
 <script>
 $(document).ready(function(){
   $("#demo").on("hide.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Detailed Description:- {{blog.detail}}');
   });
   $("#demo").on("show.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Detailed Description:- {{blog.detail}}');
   });
 });
 </script>
