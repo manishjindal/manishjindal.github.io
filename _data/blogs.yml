@@ -37,7 +37,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
 
 As well as provided a web interface for the administration.
 Images and video could be taken by the app itself and images were able to store the location where they were taken.'
-    url: "android.html"
+    url: "android-blogs.html"
     tags: 
 
 -   title: Machine Learning 
