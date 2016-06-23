@@ -12,6 +12,9 @@ active: Python Blogs
   	{% endfor %}
   </ul>
 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
    <!-- First Photo Grid-->
   <div class="w3-row-padding">
@@ -51,15 +54,29 @@ active: Python Blogs
     {% endfor %}
   </div>
 
-<!--
+
     <div class="w3-row-padding">
     {% for blog in site.posts %}
-    		<div data-role="collapsible">
+    		<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">
+     				 <span class="glyphicon glyphicon-collapse-down"></span> Detailed Description:- {{blog.detail}}
+    		</button>
 
-    			<h1>Detailed Description:- {{blog.detail}}</h1>
-      			<p>{{blog.content}}</p>
-			</div>
+    		<div id="demo" class="collapse">
+   					 {{blog.content}}
+ 			</div>
 			</br>
     {% endfor %}
   </div>
-  -->
+  
+
+
+<script>
+$(document).ready(function(){
+  $("#demo").on("hide.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+  });
+  $("#demo").on("show.bs.collapse", function(){
+    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+  });
+});
+</script>
