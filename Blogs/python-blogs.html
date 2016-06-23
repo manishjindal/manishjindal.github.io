@@ -13,6 +13,10 @@ active: Python Blogs
   </ul>
 -->
 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
    <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for blog in site.posts %}
@@ -31,3 +35,34 @@ active: Python Blogs
     {% endfor %}
   </div>
 
+  <div class="w3-row-padding">
+    {% for blog in site.posts %}
+    		<div class="w3-card-4">
+
+				<header class="w3-container w3-blue w3-hover-shadow w3-border">
+					 <p><b><i>Problem: - {{blog.title}}</i></b></p>
+				</header>
+
+						<div class="w3-container w3-white">
+						  <p>Detailed Description:- {{blog.detail}}</p>
+						</div>
+				
+				<footer class="w3-container w3-blue">
+				  <h5>{{blog.content}}</h5>
+				</footer>
+			</div>
+			</br>
+    {% endfor %}
+  </div>
+
+
+    <div class="w3-row-padding">
+    {% for blog in site.posts %}
+    		<div data-role="collapsible">
+
+    			<h1>Detailed Description:- {{blog.detail}}</h1>
+      			<p>{{blog.content}}</p>
+			</div>
+			</br>
+    {% endfor %}
+  </div>
