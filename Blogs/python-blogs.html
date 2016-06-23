@@ -46,6 +46,19 @@ active: Python Blogs
 				<footer class="w3-container w3-blue">
 				  <h5>{{blog.content}}</h5>
 				</footer>
+			</div>
+			</br>
+    {% endfor %}
+  </div>
+
+
+    <div class="w3-row-padding">
+    {% for blog in site.posts %}
+    		<div data-role="collapsible">
+
+    			<h1>Detailed Description:- {{blog.detail}}</h1>
+      			<p>{{blog.content}}</p>
+			</div>
 			</br>
     {% endfor %}
   </div>
