@@ -30,3 +30,22 @@ active: Python Blogs
 			</br>
     {% endfor %}
   </div>
+
+  <div class="w3-row-padding">
+    {% for blog in site.posts %}
+    		<div class="w3-card-4">
+
+				<header class="w3-container w3-blue w3-hover-shadow w3-border">
+					 <p><b><i>Problem: - {{blog.title}}</i></b></p>
+				</header>
+
+						<div class="w3-container">
+						  <p>Detailed Description:- {{blog.detail}}</p>
+						</div>
+				
+				<footer class="w3-container w3-blue">
+				  <h5>{{blog.content}}</h5>
+				</footer>
+			</br>
+    {% endfor %}
+  </div>
