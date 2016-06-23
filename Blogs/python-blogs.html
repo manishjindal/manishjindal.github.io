@@ -3,11 +3,12 @@ layout: w3school
 active: Python Blogs
 ---
 
-  <div class="w3-row-padding">
-
-    		<div class="w3-container w3-border">
- 				<iframe src="" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe>
- 				<!-- <embed src="" id="soultionfilename" width="100%" height="700px"> -->
-			</div>
-  </div>
-  </br>
+  <h1>Perl Blogs</h1>
+  <ul>
+  	{% for blog in site.posts %}
+  	<li>
+  		<a href="">{{blog.title}}</a>
+  		<p>{{blog.content}}</p>
+  	</li>
+  	{% endfor %}
+  </ul>
