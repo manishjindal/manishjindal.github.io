@@ -5,4 +5,4 @@
     source:
     category: Perl
     subcategory: Datatype
-    url: "Perl/readFromAndWriteToFile.pl"
+    filePath: "Perl/readFromAndWriteToFile.pl"

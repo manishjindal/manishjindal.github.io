@@ -10,7 +10,10 @@ active: Perl Programming
     			 	{% if {{blog.subcategory}} == 'Datatype' %}
      				<ul >
      					<li>
-     						<a href="{% capture url %}filename={{blog.url}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+     						<a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+<!--
+                            <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+-->
      						<p>{{blog.detail}}</p>
      					</li>
      				</ul>
