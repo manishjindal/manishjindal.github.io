@@ -3,11 +3,57 @@ layout: w3school
 active: Shell-Script Programming
 ---
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding"> 
+    		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
+    			 <h2> Datatype </h2>
+    			 {% for blog in site.categories.Shell-Script %}
+    			 	{% if {{blog.subcategory}} == 'Datatype' %}
+     				<ul >
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+     				{% endif %}
+ 				  {% endfor %}
 
-    		<div class="w3-container w3-border">
- 				<iframe src="" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe>
- 				<!-- <embed src="" id="soultionfilename" width="100%" height="700px"> -->
+ 				  <h2> Array </h2>
+    			 {% for blog in site.categories.Shell-Script %}
+     				{% if {{blog.subcategory}} == 'Array' %}
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+     				{% endif %}
+ 				  {% endfor %}
+
+ 				   <h2> Regular ExpressShell-Scriptn </h2>
+    			 {% for blog in site.categories.Shell-Script %}
+     				{% if {{blog.subcategory}} == 'Regular ExpressShell-Scriptn' %}
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+     				{% endif %}
+ 				  {% endfor %}
+
+ 				   <h2> Input Output </h2>
+    			 {% for blog in site.categories.Shell-Script %}
+     				{% if {{blog.subcategory}} == 'Input Output' %}
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+     				{% endif %}
+ 				  {% endfor %}
 			</div>
+  
   </div>
   </br>
+  
