@@ -1,0 +1,43 @@
+---
+layout: w3school
+active: SPOJ Solutions
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.js" type="text/javascript"><link rel="https://cdnjs.cloudflare.com/ajax/libs/vis/4.15.0/vis.min.css"></script>
+
+ <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+
+    		<div class="w3-container w3-border w3-sand">
+ 				 <p><iframe src="" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe></p>
+			</div>
+  </div>
+  </br>
+
+<script type="text/javascript">
+	
+	function getQueryStrings() { 
+	  var assoc  = {};
+	  var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+	  var queryString = location.search.substring(1); 
+	  var keyValues = queryString.split('&'); 
+	
+	  for(var i in keyValues) { 
+	    var key = keyValues[i].split('=');
+	    if (key.length > 1) {
+	      assoc[decode(key[0])] = decode(key[1]);
+	    }
+	  } 
+	
+	  return assoc; 
+	} 
+	
+	
+	var urlparam = getQueryStrings();
+	var myParam = urlparam['filename'];
+	document.getElementById('soultionfilename').src='/Programming%20Language/Programs/'+myParam;
+
+</script>
+
+
+
+ 
