@@ -5,16 +5,26 @@ active: Python Blogs
 
 
   <div class="w3-row-padding">
-     {% for blog in site.categories.IO %}
+    
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
-  				<p><b><i>Problem: - {{blog.title}}</i></b></p>
- 				 <p>Description:- {{blog.detail}}</p>
- 				 <p>Solution:- <a href="#" download>Download</a> 
- 				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
- 				<a href="#">View</a></p>
+    			 {% for blog in site.categories.IO %}
+     				<h1> IO </h1>
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.content}}</p>
+     					</li>
+     				</ul>
+     				<!--
+  					<p><b><i>Problem: - {{blog.title}}</i></b></p>
+ 					 <p>Description:- {{blog.detail}}</p>
+ 					 <p>Solution:- <a href="#" download>Download</a> 
+ 					<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/	solutions/{{data.download}}" frameborder="0" height="40	0" width="95%"></	iframe></p> -->
+ 					<a href="#">View</a></p>
+ 					-->
+ 				  {% endfor %}
 			</div>
-			</br>
-    {% endfor %}
+  
   </div>
 
   <!--
