@@ -16,12 +16,18 @@
       w3-margin-right"></i>Java</button>
       <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Python</button>
       <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Perl</button>
-      <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Shell Script</button>
+      <button class="w3-btn w3-white w3-hide-small" id="test"><i class="fa fa-map-pin w3-margin-right"></i>Shell Script</button>
      
       <form method="get" action="{{site.baseurl}}/Programming%20Language/groovy-programming.html">
-          <button class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Groovy</button>
+          <button class="w3-btn w3-white w3-hide-small" onclick=""><i class="fa fa-map-pin w3-margin-right"></i>Groovy</button>
       </form>
       <a href="#" class="btn btn-info" role="button">Link Button</a>
     </div>
     
   </header>
+
+  <script type="text/javascript">
+    document.getElementById("test").onclick = function () {
+        location.href = "/Programming%20Language/groovy-programming.html";
+    };
+</script>
