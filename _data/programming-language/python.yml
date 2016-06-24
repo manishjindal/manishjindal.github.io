@@ -3,6 +3,6 @@
     detail: Write a function to read from one file and write to another file
     meta: Write a function to read from one file and write to another file
     source:
-    category: Perl
+    category: python
     subcategory: Datatype
     filePath: "Perl/readFromAndWriteToFile.txt"
