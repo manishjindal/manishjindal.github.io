@@ -6,14 +6,11 @@ active: Perl Programming
   <div class="w3-row-padding"> 
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
     			 <h2> Datatype </h2>
-    			 {% for blog in site.data.programming-language.perl-programming %}
+    			 {% for blog in site.data.programming-language.perl %}
     			 	{% if {{blog.subcategory}} == 'Datatype' %}
      				<ul >
      					<li>
      						<a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
-<!--
-                            <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
--->
      						<p>{{blog.detail}}</p>
      					</li>
      				</ul>
@@ -21,40 +18,41 @@ active: Perl Programming
  				  {% endfor %}
 
  				  <h2> Array </h2>
-    			 {% for blog in site.categories.Perl %}
-     				{% if {{blog.subcategory}} == 'Array' %}
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
-     				{% endif %}
- 				  {% endfor %}
+    			 {% for blog in site.data.programming-language.perl %}
+                    {% if {{blog.subcategory}} == 'Array' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
 
  				   <h2> Regular Expression </h2>
-    			 {% for blog in site.categories.Perl %}
-     				{% if {{blog.subcategory}} == 'Regular Expression' %}
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
-     				{% endif %}
- 				  {% endfor %}
+    			  {% for blog in site.data.programming-language.perl %}
+                    {% if {{blog.subcategory}} == 'Regular Expression' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
 
  				   <h2> Input Output </h2>
-    			 {% for blog in site.categories.Perl %}
-     				{% if {{blog.subcategory}} == 'Input Output' %}
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
-     				{% endif %}
- 				  {% endfor %}
+    			 {% for blog in site.data.programming-language.perl %}
+                    {% if {{blog.subcategory}} == 'Input Output' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+
 			</div>
   
   </div>
