@@ -4,7 +4,7 @@ title: Reading and Writting to a file in perl
 detail: Write a function to read from one file and write to another file
 meta: Write a function to read from one file and write to another file
 source:
-category: Syntax
+category: Perl
 ---
 
 sub readFromOneFileAndToWriteAnotherFile {
