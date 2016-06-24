@@ -9,13 +9,14 @@ active: Perl Programming
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
     			 <h2> Datatype </h2>
     			 {% for blog in site.categories.Perl %}
-     				
-     				<ul>
+    			 	{% if blog.subcategory == 'Datatype' %}
+     				<ul >
      					<li>
      						<a href="">{{blog.title}}</a>
      						<p>{{blog.deatil}}</p>
      					</li>
      				</ul>
+     				{% endif %}
  				  {% endfor %}
 
  				  <h2> Array </h2>
