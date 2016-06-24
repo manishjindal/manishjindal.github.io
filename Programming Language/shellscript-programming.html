@@ -6,9 +6,9 @@ active: Shell-Script Programming
 
   <div class="w3-row-padding"> 
             <div class="w3-container w3-border w3-green w3-hover-shadow">
-                 <h2> Datatype </h2>
+                 <h2> Basics </h2>
                  {% for blog in site.data.programming-language.shell-script %}
-                    {% if {{blog.subcategory}} == 'Datatype' %}
+                    {% if {{blog.subcategory}} == 'Basics' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
