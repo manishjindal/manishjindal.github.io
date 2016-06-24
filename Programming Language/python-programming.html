@@ -6,7 +6,7 @@ active: Python
  
   <div class="w3-row-padding"> 
             <div class="w3-container w3-border w3-green w3-hover-shadow" style="height:600px;width:95%">
-                 <b><h4> Datatype </h4></b>
+                 <h4> Datatype </h4>
                  {% for blog in site.data.programming-language.python %}
                     {% if {{blog.subcategory}} == 'Datatype' %}
                     <ul >
@@ -18,7 +18,7 @@ active: Python
                     {% endif %}
                   {% endfor %}
 
-                  <h3> Array </h3>
+                  <h4> Array </h4>
                  {% for blog in site.data.programming-language.python %}
                     {% if {{blog.subcategory}} == 'Array' %}
                     <ul >
@@ -30,7 +30,7 @@ active: Python
                     {% endif %}
                   {% endfor %}
 
-                   <h2> Regular Expression </h2>
+                   <h4> Regular Expression </h4>
                   {% for blog in site.data.programming-language.python %}
                     {% if {{blog.subcategory}} == 'Regular Expression' %}
                     <ul >
@@ -42,7 +42,7 @@ active: Python
                     {% endif %}
                   {% endfor %}
 
-                   <h2> Input Output </h2>
+                   <h4> Input Output </h4>
                  {% for blog in site.data.programming-language.python %}
                     {% if {{blog.subcategory}} == 'Input Output' %}
                     <ul >
