@@ -14,11 +14,11 @@
 
       <button class="w3-btn {% if page.url != '/Programming%20Language/perl-programming.html' %}w3-white{% endif %} w3-hide-small" id="all"><i class="fa fa-map-pin w3-margin-right"></i>All</button>
       
-      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/c-cplusplus-programming.html' %}w3-white{% endif %}" id="c-c++"><i class="fa fa-map-pin 
+      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/c-cplusplus-programming.html' %}w3-white{% endif %}" id="arrays"><i class="fa fa-map-pin 
       w3-margin-right"></i>Arrays</button>
-      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/java-programming.html' %}w3-white{% endif %}" id="java"><i class="fa fa-map-pin 
+      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/java-programming.html' %}w3-white{% endif %}" id="strings"><i class="fa fa-map-pin 
       w3-margin-right"></i>Strings</button>
-      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/python-programming.html' %}w3-white{% endif %}" id="python"><i class="fa fa-map-pin w3-margin-right"></i>Dynamic Programming</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/python-programming.html' %}w3-white{% endif %}" id="dp"><i class="fa fa-map-pin w3-margin-right"></i>Dynamic Programming</button>
       
     </div>
     
@@ -30,23 +30,19 @@
         localStorage.setItem("selected","All");
     };
 
-    document.getElementById("java").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/java-programming.html";
+    document.getElementById("arrays").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions;
+        localStorage.setItem("selected","Arrays");
     };
 
-    document.getElementById("python").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/python-programming.html";
+    document.getElementById("strings").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions";
+         localStorage.setItem("selected","Strings");
     };
 
-    document.getElementById("perl").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/perl-programming.html";
+    document.getElementById("dp").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions";
+          localStorage.setItem("selected","DP");
     };
 
-    document.getElementById("shell-script").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/shellscript-programming.html";
-    };
-
-    document.getElementById("groovy").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/groovy-programming.html";
-    };
 </script>
