@@ -12,11 +12,8 @@ active: SPOJ
 </script>
  <!-- First Photo Grid-->
   <div class="w3-row-padding" onload=>
-  var selected = <script type="text/javascript">localStorage.getItem("selected");</script>
- 
     {% for data in site.data.spoj-solution %}
-    <p id="value"></p> 
-    	{% if data.subcategory == getSelected()  %}
+    	{% if data.category == "All"  %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
