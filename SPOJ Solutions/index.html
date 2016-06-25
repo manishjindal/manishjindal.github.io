@@ -11,16 +11,19 @@ active: SPOJ
 	}
 </script>
  <!-- First Photo Grid-->
-  <div class="w3-row-padding" onload=>
-    {% for data in site.data.spoj-solution %}
-    	{% if data.category == "ALL"  %}
+  <div class="w3-row-padding" >
+    
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
+    		<h2>Arrays</h2>
+    		{% for data in site.data.spoj-solution %}
+    			{% if data.category == "ALL"  %}
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
  				 <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
  				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
  				<a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+ 				{% endif %}
+    		{% endfor %}
 			</div>
-		{% endif %}
-    {% endfor %}
+		
   </div>
