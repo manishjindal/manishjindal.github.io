@@ -12,12 +12,12 @@
     
       <span class="w3-margin-right" >Go To:</span> 
 
-      <button class="w3-btn {% if page.url != '/Programming%20Language/perl-programming.html' %}w3-white{% endif %} w3-hide-small" id="perl"><i class="fa fa-map-pin w3-margin-right"></i>All</button>
+      <button class="w3-btn {% if page.url != '/Programming%20Language/perl-programming.html' %}w3-white{% endif %} w3-hide-small" id="all"><i class="fa fa-map-pin w3-margin-right"></i>All</button>
       
       <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/c-cplusplus-programming.html' %}w3-white{% endif %}" id="c-c++"><i class="fa fa-map-pin 
-      w3-margin-right"></i>Array</button>
+      w3-margin-right"></i>Arrays</button>
       <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/java-programming.html' %}w3-white{% endif %}" id="java"><i class="fa fa-map-pin 
-      w3-margin-right"></i>String</button>
+      w3-margin-right"></i>Strings</button>
       <button class="w3-btn w3-hide-small {% if page.url != '/Programming%20Language/python-programming.html' %}w3-white{% endif %}" id="python"><i class="fa fa-map-pin w3-margin-right"></i>Dynamic Programming</button>
       
     </div>
@@ -25,8 +25,9 @@
   </header>
 
   <script type="text/javascript">
-    document.getElementById("c-c++").onclick = function () {
-        location.href = "{{site.baseurl}}/Programming%20Language/c-cplusplus-programming.html";
+    document.getElementById("all").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions";
+        localStorage.setItem("selected","All");
     };
 
     document.getElementById("java").onclick = function () {

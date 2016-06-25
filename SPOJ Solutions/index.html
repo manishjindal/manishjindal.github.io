@@ -3,7 +3,9 @@ layout: spoj_layout
 active: SPOJ
 ---
 
-
+<script type="text/javascript">
+	window.onload = alert(localStorage.getItem("selected"));
+</script>
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
