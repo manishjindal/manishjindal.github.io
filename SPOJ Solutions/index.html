@@ -5,12 +5,13 @@ active: SPOJ
 
 <script type="text/javascript">
 	var selected = localStorage.getItem("selected");
-	window.onload = alert("hi manish"+selected);
+	<!--window.onload = alert("hi manish"+selected);-->
 </script>
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
-    	{% if data.category == "ALL" || data.subcategory == selected %}
+    	val=<script type="text/javascript">document.write(selected)</script>
+    	{% if data.category == "ALL" || data.subcategory == val %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
