@@ -11,7 +11,7 @@ active: SPOJ
   <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
     	val=<script type="text/javascript">document.write(selected)</script>
-    	{% if data.category == "ALL" || data.subcategory == <script type="text/javascript">document.write(selected)</script> %}
+    	{% if data.subcategory == <script type="text/javascript">document.write(selected)</script> %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
