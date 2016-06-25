@@ -5,16 +5,15 @@ active: SPOJ
 
 <script type="text/javascript">
 	var selected = localStorage.getItem("selected");
+	document.getElementById("someInput").value = selected;
 	<!--window.onload = alert("hi manish"+selected);-->
 </script>
  <!-- First Photo Grid-->
+ <input type="text" id="someInput" name="someInput"></input>
   <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
     	val=<script type="text/javascript">selected</script>;
-
-    	test=<script type="text/javascript">localStorage.getItem("selected")</script>;
-    	<script type="text/javascript">
-    	{% if data.subcategory == localStorage.getItem("selected") %}</script> 
+    	{% if data.subcategory ==<script type="text/javascript">document.getElementById("someInput").value</script>  %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
