@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>Manish Jindal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/ico" href="{{site.baseurl}}/assets/img/favicon.ico"/>
+<link rel="shortcut icon" type="image/ico" href="{{site.baseurl}}/assets/img/favicon.ico"/>
+
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="{{site.baseurl}}/assets/img/blog-author.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>Manish Jindal</b></h4>
+    <!--<p class="w3-text-grey">Manish Jindal</p> -->
+  </div>
+  <a href="{{site.baseurl}}/" 
+  		class="w3-padding {% if page.url == '/' %}w3-text-teal{% endif %}">HOME</a> 
+  <a href="{{site.baseurl}}/about.html" 
+  		class="w3-padding {% if page.url == '/about.html' %}w3-text-teal{% endif %}">ABOUT</a> 
+  <a href="{{site.baseurl}}/Projects" 
+  		class="w3-padding {% if page.url == '/Projects/' %}w3-text-teal{% endif %}">Projects</a>
+  <a href="{{site.baseurl}}/SPOJ%20Solutions" 
+  		class="w3-padding w3-text-teal">SPOJ</a> 
+  <a href="{{site.baseurl}}/Blogs" 
+  		class="w3-padding {% if page.url == '/Blogs/' %}w3-text-teal{% endif %}">Blogs</a>
+  <a href="{{site.baseurl}}/Programming%20Language" 
+  		class="w3-padding {% if page.url == '/Programming%20Problems/' %}w3-text-teal{% endif %}">Programming Problems</a>
+  <a href="{{site.baseurl}}/Tools" 
+  		class="w3-padding {% if page.url == '/Tools/' %}w3-text-teal{% endif %}">Tools</a>
+  <a href="{{site.baseurl}}/Popular%20Technologies" 
+  		class="w3-padding {% if page.url == '/Popular%20Technologies/' %}w3-text-teal{% endif %}">Technologies</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/jindalkumarmanish" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://twitter.com/jindal25_9_1991" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.quora.com/profile/Manish-Jindal-10" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+    <a href="https://www.linkedin.com/in/manish-jindal-a88b0327" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+ 
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+		{% include spoj_header.html %}
+
+				{{content}}
+
+		{% include footer.html %}
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+
+</body>
+</html>

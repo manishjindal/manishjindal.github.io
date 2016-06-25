@@ -1,5 +1,7 @@
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: Arrays
     problem: ABA12D - Sum of divisors!
     description: 'http://www.spoj.com/problems/ABA12D/'
     solution: "solution is here--1-- "
@@ -7,6 +9,8 @@
 
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: Dynamic Programming
     problem: ABCD - Colours A, B, C, D
     description: 'http://www.spoj.com/problems/ABCD/'
     solution: "solution is here--1-- "
@@ -14,6 +18,8 @@
 
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: Strings
     problem: ABCDEF - ABCDEF
     description: 'http://www.spoj.com/problems/ABCDEF/'
     solution: "solution is here--1-- "
@@ -21,6 +27,8 @@
 
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: File
     problem: ABCPATH - ABC Path
     description: 'http://www.spoj.com/problems/ABCPATH/'
     solution: "solution is here--1-- "
@@ -28,6 +36,8 @@
 
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: Array
     problem: ABSP1 - abs(a-b) I
     description: 'http://www.spoj.com/problems/ABSP1/'
     solution: "solution is here--1-- "
@@ -35,6 +45,8 @@
 
 -   title: SPOJ 
     folder: blogs
+    category: ALL
+    subcategory: Strings
     problem: ABSYS - Anti-Blot System
     description: 'http://www.spoj.com/problems/ABSYS/'
     solution: "solution is here--1-- "
