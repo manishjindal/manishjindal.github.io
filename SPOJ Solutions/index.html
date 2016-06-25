@@ -10,8 +10,10 @@ active: SPOJ
 	}
 </script>
  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" onload=>
   <p>selected=getSelected()</p>
+  <p>selected={selected}</p>
+  <p>selected={$selected}</p>
     {% for data in site.data.spoj-solution %}
     <p id="value"></p> 
     	{% if data.subcategory == getSelected()  %}
