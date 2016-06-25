@@ -1,6 +1,6 @@
 ---
 layout: spoj_layout
-active: SPOJ
+active: Arrays
 ---
 
 <script type="text/javascript">
@@ -11,7 +11,7 @@ active: SPOJ
 	}
 </script>
  <!-- First Photo Grid-->
-  <div class="w3-row-padding" onload=>
+  <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
     	{% if data.subcategory == "Arrays"  %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
@@ -21,7 +21,6 @@ active: SPOJ
  				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
  				<a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
 			</div>
-			</br>
 		{% endif %}
     {% endfor %}
   </div>
