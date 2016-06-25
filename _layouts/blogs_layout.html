@@ -38,7 +38,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="{{site.baseurl}}/Blogs" 
   		class="w3-padding w3-text-teal">Blogs</a>
   <a href="{{site.baseurl}}/Programming%20Language" 
-  		class="w3-padding w3-text-teal">Programming Problems</a>
+  		class="w3-padding {% if page.url == '/Programming%20Language/' %}w3-text-teal{% endif %}">Programming Problems</a>
   <a href="{{site.baseurl}}/Tools" 
   		class="w3-padding {% if page.url == '/Tools/' %}w3-text-teal{% endif %}">Tools</a>
   <a href="{{site.baseurl}}/Popular%20Technologies" 
