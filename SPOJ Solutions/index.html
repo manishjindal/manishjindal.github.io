@@ -10,7 +10,7 @@ active: SPOJ
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for data in site.data.spoj-solution %}
-    	val="test="+selected;
+    	val=selected;
     	{% if data.subcategory == selected %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
