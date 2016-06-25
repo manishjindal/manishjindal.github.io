@@ -3,11 +3,54 @@ layout: blogs_layout
 active: Android Blogs
 ---
 
-  <div class="w3-row-padding">
 
-    		<div class="w3-container w3-border">
- 				<iframe src="" frameborder="0" height="600" width="95%" id="soultionfilename"></iframe>
- 				<!-- <embed src="" id="soultionfilename" width="100%" height="700px"> -->
+  <div class="w3-row-padding">
+    
+    		<div class="w3-container w3-border w3-green w3-hover-shadow" style="height:600px;width:100%;overflow-y:scroll;background-color:#478!important">
+            	 <h2> Datatype </h2>
+    			 {% for blog in site.categories.IO %}
+     				
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+ 				  {% endfor %}
+
+ 				  <h2> Array </h2>
+    			 {% for blog in site.categories.IO %}
+     				
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+ 				  {% endfor %}
+
+ 				   <h2> Regular Expression </h2>
+    			 {% for blog in site.categories.IO %}
+     				
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+ 				  {% endfor %}
+
+ 				   <h2> Input Output </h2>
+    			 {% for blog in site.categories.IO %}
+     				
+     				<ul>
+     					<li>
+     						<a href="">{{blog.title}}</a>
+     						<p>{{blog.deatil}}</p>
+     					</li>
+     				</ul>
+ 				  {% endfor %}
 			</div>
+  
   </div>
   </br>
