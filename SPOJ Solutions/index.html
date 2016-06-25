@@ -4,14 +4,17 @@ active: SPOJ
 ---
 
 <script type="text/javascript">
-	var selected = localStorage.getItem("selected");
-	document.getElementById("value").innerHTML=selected;
+	function getSelected() {
+		var selected = localStorage.getItem("selected");
+		return var;
+	}
 </script>
  <!-- First Photo Grid-->
   <div class="w3-row-padding">
+  <p>selected</p>
     {% for data in site.data.spoj-solution %}
     <p id="value"></p> 
-    	{% if data.subcategory == <p id="value"></p>  %}
+    	{% if data.subcategory == getSelected()  %}
     		<div class="w3-container w3-border w3-khaki w3-hover-shadow">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
