@@ -15,6 +15,7 @@ active: SPOJ
   <p>selected=getSelected()</p>
   <p>selected={selected}</p>
   <p>selected={$selected}</p>
+  <p>selected=document.write(selected)</p>
     {% for data in site.data.spoj-solution %}
     <p id="value"></p> 
     	{% if data.subcategory == getSelected()  %}
