@@ -1,0 +1,51 @@
+<!-- Header -->
+  <header class="w3-container">
+    <a href="#"><img src="{{site.baseurl}}/assets/img/blog-author.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <!--{% assign url=page.url %}
+    {% assign activepage=page.active %}
+    <h1><b>Site is Under Maintenance {{url}} {{activepage}}</b></h1>
+    -->
+    <h1><b>{{activepage}}</b></h1>
+    
+    <div class="w3-section w3-bottombar w3-padding-16">
+    
+      <span class="w3-margin-right" >Go To:</span> 
+      <button class="w3-btn w3-hide-small {% if page.url != '/Blogs/c-cplusplus-blogs.html' %}w3-white{% endif %}" id="c-c++"><i class="fa fa-map-pin 
+      w3-margin-right"></i>C/C++</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/Blogs/java-blogs.html' %}w3-white{% endif %}" id="java"><i class="fa fa-map-pin 
+      w3-margin-right"></i>Java</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/Blogs/python-blogs.html' %}w3-white{% endif %}" id="python"><i class="fa fa-map-pin w3-margin-right"></i>Python</button>
+      <button class="w3-btn {% if page.url != '/Blogs/perl-blogs.html' %}w3-white{% endif %} w3-hide-small" id="perl"><i class="fa fa-map-pin w3-margin-right"></i>Perl</button>
+      <button class="w3-btn {% if page.url != '/Blogs/android-blogs.html' %}w3-white{% endif %} w3-hide-small" id="android"><i class="fa fa-map-pin w3-margin-right"></i>Android</button>
+      <button class="w3-btn {% if page.url != '/Blogs/bigdata-blogs.html' %}w3-white{% endif %} w3-hide-small" id="bigdata"><i class="fa fa-map-pin w3-margin-right"></i>BigData & MachineLearning</button>
+      
+    </div>
+    
+  </header>
+
+  <script type="text/javascript">
+    document.getElementById("c-c++").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/c-cplusplus-blogs.html";
+    };
+
+    document.getElementById("java").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/java-blogs.html";
+    };
+
+    document.getElementById("python").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/python-blogs.html";
+    };
+
+    document.getElementById("perl").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/perl-blogs.html";
+    };
+
+    document.getElementById("android").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/android-blogs.html";
+    };
+
+    document.getElementById("bigdata").onclick = function () {
+        location.href = "{{site.baseurl}}/Blogs/bigdata-blogs.html";
+    };
+</script>
