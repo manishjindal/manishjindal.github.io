@@ -3,7 +3,7 @@
     subject: Intrusion Detection System
     description: 'Minor Project to check security related issues .
 System was able to check if the person who is accessing account is an intruder or is a normal user.'
-    url: "c-cplusplus.html"
+    url: "c-cplusplus-blogs.html"
     tags: 
 
 -   title: JAVA 
@@ -22,7 +22,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     tags: 
 
 
--   title: Machine Learning 
+-   title: Perl
     img: perl.jpg
     subject: Classification of Tweets
     description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
@@ -40,11 +40,11 @@ Images and video could be taken by the app itself and images were able to store 
     url: "android-blogs.html"
     tags: 
 
--   title: Machine Learning 
+-   title: Big Data 
     img: mclearning.png
     subject: Classification of Tweets
     description: 'Implemented tweets classification methods for various categories like Business, Entertainment, Health, Politics, Sports and Technology. The tweet classification can be used for knowing what the audience think of a particular product. The tweets are fetched by the hash-tags using twitter API. Naive Bayes and SVM model are used for classification.'
-    url: "machineLearning-blogs.html"
+    url: "bigdata-blogs.html"
     tags: 
 
 
