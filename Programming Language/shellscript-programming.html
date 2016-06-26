@@ -4,11 +4,12 @@ active: Shell-Scripting
 ---
 
 
-  <div class="w3-row-padding"> 
-                <div class="w3-container w3-border w3-green w3-hover-shadow" style="height:600px;width:100%;overflow-y:scroll;background-color:#478!important">
-                 <h4> Basics </h4>
-                 {% for blog in site.data.programming-language.shell-script %}
-                    {% if {{blog.subcategory}} == 'Basics' %}
+  <div class="w3-row-padding w3-white"> 
+            <div>
+            <b><h2>Datatype</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.data.programming-language.shell-scripting %}
+                    {% if {{blog.subcategory}} == 'Datatype' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
@@ -17,9 +18,13 @@ active: Shell-Scripting
                     </ul>
                     {% endif %}
                   {% endfor %}
+            </div>
+            </div>
 
-                  <h4> Array </h4>
-                 {% for blog in site.data.programming-language.perl-programming %}
+            <div>
+            <b><h2>Array</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.data.programming-language.shell-scripting %}
                     {% if {{blog.subcategory}} == 'Array' %}
                     <ul >
                         <li>
@@ -29,9 +34,13 @@ active: Shell-Scripting
                     </ul>
                     {% endif %}
                   {% endfor %}
+            </div>
+            </div>
 
-                   <h4> Regular Expression </h4>
-                  {% for blog in site.data.programming-language.perl-programming %}
+            <div>
+            <b><h2>Regular Expression</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.data.programming-language.shell-scripting %}
                     {% if {{blog.subcategory}} == 'Regular Expression' %}
                     <ul >
                         <li>
@@ -41,9 +50,13 @@ active: Shell-Scripting
                     </ul>
                     {% endif %}
                   {% endfor %}
-
-                   <h4> Input Output </h4>
-                 {% for blog in site.data.programming-language.perl-programming %}
+            </div>
+            </div>
+            
+            <div>
+            <b><h2>Input Output</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.data.programming-language.shell-scripting %}
                     {% if {{blog.subcategory}} == 'Input Output' %}
                     <ul >
                         <li>
@@ -53,9 +66,10 @@ active: Shell-Scripting
                     </ul>
                     {% endif %}
                   {% endfor %}
-
             </div>
-  
+            </div>
+
+       
   </div>
   </br>
   
