@@ -1,0 +1,156 @@
+{\rtf1\ansi\ansicpg1252\deff0\dntblnsbdb\viewkind1
+{\fonttbl{\f0\froman\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Courier New;}{\f2\fnil\fcharset0 Courier New;}}
+{\colortbl;\red255\green255\blue0;\red0\green0\blue255;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid18467\listhybrid
+{\listlevel\levelnfc0\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid6334\'01\0-;}{\levelnumbers;}\chbrdr\brdrnone\brdrcf1\chshdng0\chcfpat1\chcbpat1 \fi-360\li720\jclisttab\tx720}
+{\listname ;}\listid41}
+}{\*\listoverridetable
+{\listoverride\listid41\listoverridecount0\ls1}
+}{\stylesheet{\*\cs0 \additive Default Paragraph Font;}
+}
+\jexpand\pgwsxn11900\pghsxn16840
+{\*\bkmkstart page1}{\*\bkmkend page1}
+\margl1140\margr1120\margt1104\margb1440\marglsxn1140\margrsxn1120\cols1\colno1\colw9640
+{
+{\pard\plain \li2660\ql{\f1\fs24 Distributed Systems (CSE431)}\par}
+}
+{\pard\sl-8\slmult0\par
+
+{\pard\plain \li2820\ql{\f1\fs24 Project Part-2: Map-Reduce}\par}
+}
+{\pard\sl-289\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 Description:}\par}
+}
+{\pard\sl-263\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri400\nooverflow\ql{\f2\fs22 Define 2 classes, Mapper and Reducer, and other helper classes and put them in a jar - only for Java.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\sl259\slmult1 \ri400\nooverflow\ql{\f2\fs22 Job: will extend the Mapper class and implement the map() method. Similarly, it will extend the Reducer class and implement the reduce() method. This will be packaged as a jar. In C, this will be packaged as a .so.}\par}
+}
+{\pard\sl-204\slmult0\par
+
+{\pard\plain \li0\sl284\slmult1 \ri140\nooverflow\ql{\f2\fs21 In both cases, the assumption is that the job jar is available in the TT's classpath (LD_LIBRARY_PATH for C). Before running the job, you will have to manually copy the jar (or .so) to all the nodes running TT.}\par}
+}
+{\pard\sl-179\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri0\nooverflow\ql{\f2\fs22 In Java, use Class.forName() to load the class. In C use dlopen() to load the .so; and dlsym() to invoke the map() and reduce() methods.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 JobSubmitResponse jobSubmit(JobSubmitRequest)}\par}
+}
+{\pard\sl-263\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 JobStatusResponse getJobStatus(JobStatusRequest)}\par}
+}
+{\pard\sl-263\slmult0\par
+
+{\pard\plain \li0\sl266\slmult1 \ri540\nooverflow\ql{\f2\fs22 JobClient: This is invoked from command line with the following args: <mapName> <reducerName> <inputFile in HDFS> <outputFile in HDFS> <numReducers>}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri400\nooverflow\ql{\f2\fs22 JobClient finds the location of JT using a conf file, and sends an RPC jobSubmit with the protobuf filled accordingly.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 On success, the response contains the jobId.}\par}
+}
+{\pard\sl-7\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri400\nooverflow\ql{\f2\fs22 The JobClient then sits in a while loop sending getJobStatus RPCs with the jobId until the JT responds with a completion response.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri280\nooverflow\ql{\f2\fs22 The client should print progress status to show percentage of map tasks started, and percentage of reduce tasks started on the console.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\sl259\slmult1 \ri400\nooverflow\ql{\f2\fs22 The JT assigns an id to the job, and queues the job for processing. It opens the file in HDFS, obtains the block locations to determine the number of map tasks required. It uses the locations to decide where to schedule the map tasks.}\par}
+}
+{\pard\sl-204\slmult0\par
+
+{\pard\plain \li0\sl266\slmult1 \ri0\nooverflow\ql{\f2\fs22 When a TT heartbeats, it uses the number of map/reduce slots available to decide if it can schedule tasks on the TT. The HB response contains information required to execute the map/reduce tasks.}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li0\sl266\slmult1 \ri280\nooverflow\qj{\f2\fs22 The heartbeat from TT also contains information about the status of the tasks. It uses this information to respond to the getJobStatus RPC from the JobClient.}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li0\sl286\slmult1 \ri1320\nooverflow\ql{\f2\fs22 Once all the map tasks for a job are complete, it schedules the reducer(s) on the task tracker nodes based on availability.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 HeartBeatResponse heartBeat(HeartBeatRequest)}\par}
+}\sect\sbkpage\sectd\pard\plain
+\pgwsxn11900\pghsxn16840
+{\*\bkmkstart page2}{\*\bkmkend page2}
+\margl1136\margr1120\margt1105\margb1440\marglsxn1136\margrsxn1120\cols1\colno1\colw9644
+{
+{\pard\plain \li4\sl266\slmult1 \ri280\nooverflow\ql{\f2\fs22 Each TT heartbeats with the JT every second reporting information about how many map/reduce tasks it can run; and also providing status information about the current tasks it is running.}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li4\sl259\slmult1 \ri140\nooverflow\ql{\f2\fs22 When the TT gets a map request, it places the request in an internal queue. The consumers of this queue are a fixed number of threads. The number of map slots sent by TT in the heartbeat request is the number of threads - number of map tasks already being executed.}\par}
+}
+{\pard\sl-204\slmult0\par
+
+{\pard\plain \li4\sl266\slmult1 \ri0\nooverflow\ql{\f2\fs22 Each thread picks up a MapTask from the queue. It then instantiates a class of type Mapper by loading the mapClass, and calling its constructor (empty constructor).}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li4\sl311\slmult1 \ri140\nooverflow\ql{\f2\fs21 It then reads the appropriate HDFS block using readBlock, splits it into lines (\\n terminated) and invokes the map() implemented by the class.}\par}
+}
+{\pard\sl-151\slmult0\par
+
+{\pard\plain \li4\sl266\slmult1 \ri0\nooverflow\qj{\f2\fs22 The map() will return a string that contains the records ((K,V) pairs) it wants to emit. The helper thread will write the record after adding \\n to a file. This file is the output of the map task.}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li4\sl258\slmult1 \ri400\nooverflow\qj{\f2\fs21 Once the input blocks are all processed, the map task is complete. The results are placed in another queue for the TT to pick up and provide status to the JT along with the name of the output file just created.}\par}
+}
+{\pard\sl-1\slmult0\par
+
+{\pard\plain \li4\sl286\slmult1 \ri140\nooverflow\ql{\f2\fs22 Write the output of the map task in a file in HDFS. Give unique names to the map output files like job_<jobid>_map_<taskid>.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li4\sl284\slmult1 \ri280\nooverflow\qj{\f2\fs21 Once all the map tasks for a job are complete, the JT will schedule the reducers. To do this, it takes the outputs of the map tasks and divides them among all the reducers. It then schedules the reducers on the TTs.}\par}
+}
+{\pard\sl-179\slmult0\par
+
+{\pard\plain \li4\sl286\slmult1 \ri0\nooverflow\ql{\f2\fs22 When the tasktracker gets a reduce task, it queues it up like it does for map tasks.}\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li4\sl246\slmult1 \ri140\nooverflow\ql{\f2\fs22 A thread from the reducer thread pool picks up the reducer task and does the following.}\par}
+}
+{\pard\sl-1\slmult0\par
+{{\listtext{\pard\plain {\f2\fs22 - }\tab}}\pard\plain 
+\f2\fs22 \qj\fi-4\nowidctlpar\jclisttab\tx268\faauto\ls1\ilvl0\rin0\nooverflow\lin4\itap0 \sl246\slmult1 {\plain\f2\fs22 Read each HDFS file. This file contains the records that are emitted by the map task. To simplify, assume that the records as "\\n" terminated. }\par\pard\sl-1\slmult0\par
+{\listtext{\pard\plain {\f2\fs22 - }\tab}}\pard\plain 
+\f2\fs22 \qj\fi-264\nowidctlpar\jclisttab\tx264\faauto\ls1\ilvl0\rin0\nooverflow\lin264\itap0 {\plain\f2\fs22 It invokes the reduce() method with each such line }\par\pard\sl-6\slmult0\par
+{\listtext{\pard\plain {\f2\fs22 - }\tab}}\pard\plain 
+\f2\fs22 \qj\fi-4\nowidctlpar\jclisttab\tx268\faauto\ls1\ilvl0\rin0\nooverflow\lin4\itap0 \sl286\slmult1 {\plain\f2\fs22 The reduce() returns a string. If it is non-null, the string is written as is to the output file }\par}
+}
+{\pard\sl-174\slmult0\par
+
+{\pard\plain \li4\sl266\slmult1 \ri140\nooverflow\qj{\f2\fs22 Once all the input files are processed, the reducer is complete and the result placed in another queue for the TT to pick up. The output of each reducer goes to the file <outputfile>_<jobId>_<reducerId>}\par}
+}
+{\pard\sl-195\slmult0\par
+
+{\pard\plain \li4\ql{\f2\fs22 The TT then communicates the status to the JT and the job is completed.}\par}
+}
+{\pard\sl-263\slmult0\par
+
+{\pard\plain \li4\sl286\slmult1 \ri280\nooverflow\ql{\f2\fs22 The final output can be read by reading all the files matching the name <outputfile>_<jobId>_*}\par}
+}\sect\sbknone
+\marglsxn1140\margrsxn2400\cols1\colno1\colw8360
+{\pard\sl-200\slmult0\par
+\pard\sl-278\slmult0\par
+
+{\pard\plain \li0\ql{\f2\fs22 Note: All required proto, java and IDL files have been attached}\par}
+}}
