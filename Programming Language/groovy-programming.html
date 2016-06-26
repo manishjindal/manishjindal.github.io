@@ -5,20 +5,9 @@ active: Groovy
 
 
   <div class="w3-row-padding"> 
-            <div class="w3-container w3-border w3-green w3-hover-shadow" style="height:600px;width:100%;overflow-y:scroll;background-color:#478!important">
-                 <h4> Datatype </h4>
-                 {% for blog in site.data.programming-language.groovy %}
-                    {% if {{blog.subcategory}} == 'Datatype' %}
-                    <ul >
-                        <li>
-                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
-                            <p>{{blog.detail}}</p>
-                        </li>
-                    </ul>
-                    {% endif %}
-                  {% endfor %}
-
-                  <h4> Array </h4>
+            <div>
+            <b><h2>Array</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="height:600px;width:100%;background-color:#478!important">
                  {% for blog in site.data.programming-language.groovy %}
                     {% if {{blog.subcategory}} == 'Array' %}
                     <ul >
@@ -29,9 +18,29 @@ active: Groovy
                     </ul>
                     {% endif %}
                   {% endfor %}
+            </div>
+            </div>
 
-                   <h4> Regular Expression </h4>
-                  {% for blog in site.data.programming-language.groovy %}
+            <div>
+            <b><h2>Array</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="height:600px;width:100%;background-color:#478!important">
+                 {% for blog in site.data.programming-language.groovy %}
+                    {% if {{blog.subcategory}} == 'Array' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
+
+            <div>
+            <b><h2>Regular Expression</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="height:600px;width:100%;background-color:#478!important">
+                 {% for blog in site.data.programming-language.groovy %}
                     {% if {{blog.subcategory}} == 'Regular Expression' %}
                     <ul >
                         <li>
@@ -41,8 +50,12 @@ active: Groovy
                     </ul>
                     {% endif %}
                   {% endfor %}
-
-                   <h4> Input Output </h4>
+            </div>
+            </div>
+            
+            <div>
+            <b><h2>Input Output</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="height:600px;width:100%;background-color:#478!important">
                  {% for blog in site.data.programming-language.groovy %}
                     {% if {{blog.subcategory}} == 'Input Output' %}
                     <ul >
@@ -53,9 +66,10 @@ active: Groovy
                     </ul>
                     {% endif %}
                   {% endfor %}
-
             </div>
-  
+            </div>
+
+       
   </div>
   </br>
   
