@@ -4,53 +4,72 @@ active: Java
 ---
 
 
-  <div class="w3-row-padding">
-    
-    		<div class="w3-container w3-border w3-green w3-hover-shadow" style="height:600px;width:100%;overflow-y:scroll;background-color:#478!important">
-            	 <h2> Datatype </h2>
-    			 {% for blog in site.categories.IO %}
-     				
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
- 				  {% endfor %}
+  <div class="w3-row-padding w3-white"> 
+            <div>
+            <b><h2>Datatype</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.categories.IO %}
+                    {% if {{blog.subcategory}} == 'Datatype' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
 
- 				  <h2> Array </h2>
-    			 {% for blog in site.categories.IO %}
-     				
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
- 				  {% endfor %}
+            <div>
+            <b><h2>Array</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.categories.IO %}
+                    {% if {{blog.subcategory}} == 'Array' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
 
- 				   <h2> Regular Expression </h2>
-    			 {% for blog in site.categories.IO %}
-     				
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
- 				  {% endfor %}
+            <div>
+            <b><h2>Regular Expression</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.categories.IO %}
+                    {% if {{blog.subcategory}} == 'Regular Expression' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
+            
+            <div>
+            <b><h2>Input Output</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="background-color:#478!important">
+                 {% for blog in site.categories.IO %}
+                    {% if {{blog.subcategory}} == 'Input Output' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
 
- 				   <h2> Input Output </h2>
-    			 {% for blog in site.categories.IO %}
-     				
-     				<ul>
-     					<li>
-     						<a href="">{{blog.title}}</a>
-     						<p>{{blog.deatil}}</p>
-     					</li>
-     				</ul>
- 				  {% endfor %}
-			</div>
-  
+       
   </div>
   </br>
+  
