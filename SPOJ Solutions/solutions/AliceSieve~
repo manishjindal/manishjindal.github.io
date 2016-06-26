@@ -1,0 +1,106 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+    int t;
+    cin>>t;
+    getchar();
+    while(t>0)
+    {
+              getchar();
+              char a[100000];
+              gets(a);
+              int i=0,indplus=0,indequal=0,indm=0;
+              while(a[i]!='\0')
+              {
+                 if(a[i]=='=')
+                 indequal=i;
+                 if(a[i]=='+')
+                 indplus=i;
+                 if(a[i]=='m')
+                 indm=i;
+                 i++;
+               }
+               int len=i;
+               int no1=0,no2=0,digs=0,dige=0,sum=0;
+			if(indm>indplus && indm>indequal)
+			{
+                 for(int i=0;i<indplus-1;i++)
+				{
+					no1=no1*10;
+					no1=no1+a[i]-'0';
+				//		System.out.println(st.charAt(i));
+				
+					}	
+				for(int i=indplus+2;i<indequal-1;i++)
+				{
+					no2=no2*10;
+					no2=no2+a[i]-'0';
+				//	System.out.println(st.charAt(i));
+						
+					}	
+					
+					sum=no1+no2;
+				digs=indequal+2;
+				dige=len-1;
+				
+				cout<<no1<<" + "<<no2<<" = "<<sum<<endl;
+			}
+            else if(indm>indplus && indm<indequal)
+			{
+                 for(int i=0;i<indplus-1;i++)
+				{
+					no1=no1*10;
+					no1=no1+a[i]-'0';
+				//		System.out.println(st.charAt(i));
+				
+					}	
+				digs=indplus+2;
+				dige=indequal-2;
+                for(int i=indequal+2;i<len;i++)
+				{
+					no2=no2*10;
+					no2=no2+a[i]-'0';
+				//	System.out.println(st.charAt(i));
+						
+					}	
+					
+					sum=no2-no1;
+				
+				cout<<no1<<" + "<<sum<<" = "<<no2<<endl;
+			}
+
+			else if(indm<indplus)
+			{
+                            
+                            digs=0;
+				dige=indplus-2;
+                for(int i=indplus+2;i<indequal-1;i++)
+				{
+					no1=no1*10;
+					no1=no1+a[i]-'0';
+				//		System.out.println(st.charAt(i));
+				
+					}	
+				
+                for(int i=indequal+2;i<len;i++)
+				{
+					no2=no2*10;
+					no2=no2+a[i]-'0';
+				//	System.out.println(st.charAt(i));
+						
+					}	
+					sum=no2-no1;
+              
+			cout<<sum<<" + "<<no1<<" = "<<no2<<endl;
+			}
+              
+                        
+                      //  cout<<"sum="<<sum<<"  indexm="<<indm<<"    digs="<<digs<<"    dige="<<dige<<endl;
+              t--;
+              }
+    
+    return 0;
+}
+

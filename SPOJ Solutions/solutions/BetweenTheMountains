@@ -1,0 +1,110 @@
+#include<iostream>
+using namespace std;
+
+
+void merge(int arr[],int min,int mid,int max)
+{
+  int tmp[1005];
+  int i,j,k,m; 
+  j=min;
+  m=mid+1;
+  for(i=min; j<=mid && m<=max ; i++)
+  {
+     if(arr[j]<=arr[m])
+     {
+         tmp[i]=arr[j];
+         j++;
+     }
+     else
+     {
+         tmp[i]=arr[m];
+         m++;
+     }
+  }
+  if(j>mid)
+  {
+     for(k=m; k<=max; k++)
+     {
+         tmp[i]=arr[k];
+         i++;
+     }
+  }
+  else
+  {
+     for(k=j; k<=mid; k++)
+     {
+        tmp[i]=arr[k];
+        i++;
+     }
+  }
+  for(k=min; k<=max; k++)
+     arr[k]=tmp[k];
+}
+
+
+void part(int arr[],int min,int max)
+{
+ int mid;
+ if(min<max)
+ {
+   mid=(min+max)/2;
+   part(arr,min,mid);
+   part(arr,mid+1,max);
+   merge(arr,min,mid,max);
+ }
+}
+
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t>0)
+    {
+              int n1,n2;
+              int a1[1005],b1[1005];
+              
+              cin>>n1;
+              for(int i=0;i<n1;i++)
+              cin>>a1[i];
+              part(a1,0,n1-1);
+              
+              cin>>n2;
+              for(int i=0;i<n2;i++)
+              cin>>b1[i];
+              part(b1,0,n2-1);
+              
+          // cout<<"----"<<endl;
+              int min=1000000;
+             
+             int i=0,j=0,flag=0;
+             while(i!=n1&&j!=n2)
+             {
+                      int diff;
+                      diff=a1[i]-b1[j];
+                      if(diff<0)
+                      diff=-diff;
+                 //    cout<<"diff="<<diff<<" i="<<i<<" j="<<j<<endl;
+                      
+                      if(min>diff)
+                      min=diff;
+                    //  cout<<"min="<<min<<endl;
+                      if(a1[i]>b1[j])
+                      j++;
+                      else if(a1[i]<b1[j])
+                      i++;
+                      else
+                      {
+                          flag=1;
+                          cout<<"0"<<endl;
+                          break;
+                          }
+             }
+                      if(flag==0)
+                      cout<<min<<endl;
+    
+              t--;
+    }
+    return 0;
+}
+

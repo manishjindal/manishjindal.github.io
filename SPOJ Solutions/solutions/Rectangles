@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long int n,sum=0,count=0;
+    cin>>n;
+    sum=n;
+    for(long long int i=2;i<=n/2;i++)
+    {
+             count=n/i;
+             if(count>=i)
+             sum=sum+count-i+1;
+             
+          //   cout<<"--1--sum="<<sum<<endl;
+             }
+    
+    
+    
+    
+    cout<<sum;
+    //int t;
+   // cin>>t;
+    
+    return 0;
+    
+}
+
