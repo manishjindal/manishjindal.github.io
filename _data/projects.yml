@@ -33,7 +33,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
 -   title: Machine Learning 
     img: mclearning.png
     subject: Hadoop Implementation
-    shortdescription: 'Develop a system which will have same functionality as Hadoop whcih will consist HADF and MapReduce'    detailedDescription: "IRE/Major/tweetclassification.pdf"
+    shortdescription: 'Develop a system which will have same functionality as Hadoop whcih will consist HDFS and MapReduce'
     detailedDescription: ""
     url: ""
     tags:
