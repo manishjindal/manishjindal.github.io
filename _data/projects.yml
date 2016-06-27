@@ -32,7 +32,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
 
 -   title: Machine Learning 
     img: mclearning.png
-    subject: Hadoop Implementation. Develop tool similar to Hadoop which wi
+    subject: Hadoop Implementation
     shortdescription: 'Develop a system which will have same functionality as Hadoop whcih will consist HADF and MapReduce'    detailedDescription: "IRE/Major/tweetclassification.pdf"
     detailedDescription: ""
     url: ""
