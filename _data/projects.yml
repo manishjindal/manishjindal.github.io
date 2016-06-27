@@ -30,14 +30,14 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     url: ""
     tags: 
 
--   title: C/C++ 
-    img: cpp.png
-    subject: Intrusion Detection System
-    shortdescription: 'Minor Project to check security related issues .
-System was able to check if the person who is accessing account is an intruder or is a normal user.'
-    detailedDescription: ""
+-   title: Machine Learning 
+    img: mclearning.png
+    subject: Hadoop Implementation. Develop tool similar to Hadoop which wi
+    shortdescription: 'Develop a system which will have same functionality as Hadoop whcih will consist HADF and MapReduce'    detailedDescription: "IRE/Major/tweetclassification.pdf"
+    detailedDescription: "#"
     url: ""
-    tags: 
+    tags:
+
 
 -   title: Android 
     img: Android.jpg
