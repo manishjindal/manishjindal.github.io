@@ -6,8 +6,8 @@ active: Home
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     {% for data in site.data.home-page %}
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">  
+    <div class="w3-third w3-container w3-margin-bottom" style="height:50%">
+      <div class="w3-container w3-white" >  
           <img src="{{site.baseurl}}/assets/img/{{data.img}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
         	<p><a href="{{site.baseurl}}/{{data.url}}">{{data.title}}</a></p>
         	<p>{{data.content}}</p>
