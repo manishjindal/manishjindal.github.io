@@ -1,7 +1,7 @@
 -   title: Projects 
     folder: projects
     img: projects.jpg
-    content: 'This sections has many projects with detailed problem description given the steps, hwo to solve/move towards the solution'
+    content: 'This sections has many projects with detailed problem description given the steps for, how to solve/move towards the solution'
     url: Projects
 
 -   title: SPOJ
@@ -25,7 +25,7 @@
 -   title: Tools
     folder: tools
     img: tools.jpg
-    content: 'Different tools used in industry and their usage'
+    content: 'This section describs different tools avaiable in the market and how we can use those tools for ease of our daily life specially in DevOps'
     url: Tools
 
 -   title: Technology
