@@ -34,7 +34,7 @@ using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
     img: mclearning.png
     subject: Hadoop Implementation
     shortdescription: 'Develop a system which will have same functionality as Hadoop which will consist HDFS and MapReduce'
-    detailedDescription: ""
+    detailedDescription: "Hadoop/list.html"
     url: ""
     tags:
 
