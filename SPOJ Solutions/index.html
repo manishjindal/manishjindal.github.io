@@ -1,6 +1,6 @@
 ---
 layout: spoj_layout
-active: www.spoj.com/users/mjindal -- 
+active: www.spoj.com/users/mjindal
 ---
 
 <script type="text/javascript">
@@ -16,7 +16,7 @@ active: www.spoj.com/users/mjindal --
     		<div >
     		<b><h2>Ad-hoc</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "ad-hoc-1" | data.subcategory == "ad-hoc"  %}
+    			{% if data.subcategory == "ad-hoc-1" or data.subcategory == "ad-hoc"  %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
