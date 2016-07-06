@@ -31,7 +31,7 @@ active: www.spoj.com/users/mjindal
 			<div >
     		<b><h2>Math</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "math" || data.subcategory == "math , big-numbers" || data.subcategory == "math , string" %}
+    			{% if data.subcategory == "math" or data.subcategory == "math , big-numbers" or data.subcategory == "math , string" %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -78,7 +78,7 @@ active: www.spoj.com/users/mjindal
 			<div >
     		<b><h2>Dynamic Programming</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "dynamic-programming" || data.subcategory == "dynamic-programming, greedy" %}
+    			{% if data.subcategory == "dynamic-programming" or data.subcategory == "dynamic-programming, greedy" %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -93,7 +93,7 @@ active: www.spoj.com/users/mjindal
         <div >
         <b><h2>TREE</h2></b>
         {% for data in site.data.spoj-solution %}
-          {% if data.subcategory == "tree , binary-search" || data.subcategory == "mst" %}
+          {% if data.subcategory == "tree , binary-search" or data.subcategory == "mst" %}
           <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
           <p><b><i>Problem: - {{data.problem}}</i></b></p>
          <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -108,7 +108,7 @@ active: www.spoj.com/users/mjindal
         <div >
         <b><h2>GRAPH</h2></b>
         {% for data in site.data.spoj-solution %}
-          {% if data.subcategory == "dfs" || data.subcategory == "bfs" || data.subcategory == "graph" %}
+          {% if data.subcategory == "dfs" or data.subcategory == "bfs" or data.subcategory == "graph" %}
           <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
           <p><b><i>Problem: - {{data.problem}}</i></b></p>
          <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
