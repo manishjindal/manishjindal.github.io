@@ -1,0 +1,98 @@
+#include<iostream>
+using namespace std;
+ long long int a[110009][5];
+int main()
+{
+       int t=1;
+    while(1)
+    {
+              int n;
+              scanf("%d",&n);
+              if(n==0)
+              break;
+            
+              //cout<<"1"<<endl;
+              for(int i=0;i<n;i++)
+              {
+                      scanf("%lld",&a[i][0]);
+                      scanf("%lld",&a[i][1]);
+                      scanf("%lld",&a[i][2]);        
+                      
+              }
+              
+              int i=0;
+            //  if((a[i][1]+a[i][2])<=a[i][2])
+              a[i][2]=a[i][1]+a[i][2];
+              
+              for(i=1;i<n;i++)
+              {
+                 if(i==1)
+                 {
+                      
+                      a[i][0]+=a[i-1][1];
+                      
+                                            
+                      if(a[i][0]<=a[i-1][1] && a[i][0]<=a[i-1][2])
+                      a[i][1]+=a[i][0];
+                      else if(a[i-1][1]<=a[i][0] && a[i-1][1]<=a[i-1][2])
+                      a[i][1]+=a[i-1][1];
+                      else if(a[i-1][2]<=a[i-1][1] && a[i-1][2]<=a[i][0])
+                      a[i][1]+=a[i-1][2];
+                      
+                      if(a[i][1]<=a[i-1][1] && a[i][1]<=a[i-1][2])
+                      a[i][2]+=a[i][1];
+                      else if(a[i-1][1]<=a[i][1] && a[i-1][1]<=a[i-1][2])
+                      a[i][2]+=a[i-1][1];
+                      else if(a[i-1][2]<=a[i-1][1] && a[i-1][2]<=a[i][1])
+                      a[i][2]+=a[i-1][2];
+                 
+                 }
+                 else
+                 {
+                     
+                      if(a[i-1][0]<=a[i-1][1])
+                      a[i][0]+=a[i-1][0];
+                      else
+                      a[i][0]+=a[i-1][1];
+                      
+                     if(a[i][0]<=a[i-1][1] && a[i][0]<=a[i-1][2] && a[i][0]<=a[i-1][0]){
+                    //                      cout<<"--1--"<<endl;
+                      a[i][1]+=a[i][0];
+                      }
+                      else if(a[i-1][0]<=a[i-1][1] && a[i-1][0]<=a[i-1][2] && a[i-1][0]<=a[i][0]){
+                      //     cout<<"--2--"<<endl;
+                      a[i][1]+=a[i-1][0];
+                      }
+                      else if(a[i-1][1]<=a[i-1][0] && a[i-1][1]<=a[i-1][2] && a[i-1][1]<=a[i][0]){
+                      a[i][1]+=a[i-1][1];
+              //        cout<<"--3--"<<endl;
+              }
+                      else if(a[i-1][2]<=a[i-1][0] && a[i-1][2]<=a[i-1][1] && a[i-1][2]<=a[i][0])
+                      {
+                          // cout<<"--4--"<<endl;
+                      a[i][1]+=a[i-1][2];
+                      }
+                      
+                      if(a[i][1]<=a[i-1][1] && a[i][1]<=a[i-1][2])
+                      a[i][2]+=a[i][1];
+                      else if(a[i-1][1]<=a[i][1] && a[i-1][1]<=a[i-1][2])
+                      a[i][2]+=a[i-1][1];
+                      else if(a[i-1][2]<=a[i-1][1] && a[i-1][2]<=a[i][1])
+                      a[i][2]+=a[i-1][2];
+                 
+                     
+                     
+                 }
+                      
+              }
+              /*
+              cout<<endl;
+              for(int i=0;i<n;i++)
+              cout<<a[i][0]<<" "<<a[i][1]<<" "<<a[i][2]<<endl;
+              cout<<endl;
+              */
+              printf("%d. %lld\n",t,a[n-1][1]);
+              t++;
+    }
+    return 0;
+}

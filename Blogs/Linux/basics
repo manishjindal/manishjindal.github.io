@@ -1,0 +1,29 @@
+Remove your /var/lib/dpkg/lock file and force package reconfiguration.
+
+sudo rm /var/lib/dpkg/lock
+sudo dpkg --configure -a
+It should work after this.
+
+
+
+
+Problem:-
+sudo apt-get install docker-engine
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been createdn
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ docker-engine : Depends: libsystemd-journal0 (>= 201) but it is not installable
+                 Recommends: aufs-tools but it is not installable
+                 Recommends: cgroupfs-mount but it is not installable or
+                             cgroup-lite but it is not installable
+E: Unable to correct problems, you have held broken packages.
+
+Solution:
+sudo apt-get install docker-engine=1.8.3-0~trusty

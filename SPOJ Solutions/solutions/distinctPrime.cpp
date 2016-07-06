@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+    
+    
+    int magic[1000];
+    int k=0;
+    for(int j=30;j<3000;j++)
+    {
+            int count=0,n=j;
+            if(n%2==0)
+            count++;
+           while (n%2 == 0)
+            {
+                //printf("%d ", 2);
+                n = n/2;
+            }
+ 
+    // n must be odd at this point.  So we can skip one element (Note i = i +2)
+            for (int i = 3; i * i<=n; i = i+2)
+            {
+                // While i divides n, print i and divide n
+                if(n%i==0)
+                count++;
+                if(count>=3)
+                break;
+                while (n%i == 0)
+                {
+                  //  printf("%d ", i);
+                    n = n/i;
+                }
+            }
+ 
+    // This condition is to handle the case whien n is a prime number
+            // greater than 2
+            if (n > 2){
+               // printf ("%d ", n);
+                count++;
+                }
+                   
+                  if(count>=3){
+                               
+                               magic[k++]=j;
+                               if(k==1000)
+                               break;
+                               
+                               }
+                   
+    }
+   int t;
+    cin>>t;
+    while(t--)
+    {
+              int n;
+              cin>>n;
+              cout<<magic[n-1]<<endl;
+              
+              
+              }
+    
+    return 0;
+    
+    }
+

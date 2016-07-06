@@ -1,0 +1,27 @@
+---
+layout: spoj_layout
+active: http://www.spoj.com/users/mjindal/
+---
+
+<script type="text/javascript">
+	var selected; 
+	function getSelected() {
+		selected = localStorage.getItem("selected");
+		return var;
+	}
+</script>
+ <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-white">
+    {% for data in site.data.spoj-solution %}
+    	{% if data.subcategory == "binary-search"  %}
+    		<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+  				<p><b><i>Problem: - {{data.problem}}</i></b></p>
+ 				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+ 				 <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+ 				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+ 				<a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+			</div>
+			</br>
+		{% endif %}
+    {% endfor %}
+  </div>

@@ -1,0 +1,126 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+    int n1,n2;
+    scanf("%d",&n1);
+    while(n1!=0)
+    {
+                int a1[11000]={0},b1[11000]={0},a2[11000]={0},b2[11000]={0},neg[11000]={0},pos[11000]={0};
+                int min=0,max=0;
+                for(int i=0;i<n1;i++)
+                {
+                        int item;
+                        scanf("%d",&item);
+                        if(item<0)
+                        {
+                               if(item<min)
+                               min=item;
+                               item=-item;
+                               neg[item]++;    
+                               a1[item]=-item;        
+                        }
+                        else
+                        {
+                            if(item>max)
+                            max=item;
+                            pos[item]++;
+                            b1[item]=item;
+                        }
+                                
+                        
+                }
+                scanf("%d",&n2);
+                for(int i=0;i<n2;i++)
+                {
+                        int item;
+                        scanf("%d",&item);
+                        if(item<0)
+                        {
+                               if(item<min)
+                               min=item;
+                               item=-item;
+                               neg[item]++;    
+                               a2[item]=-item;        
+                        }
+                        else
+                        {
+                            if(item>max)
+                            max=item;
+                            pos[item]++;
+                            b2[item]=item;
+                        }
+                                
+                        
+                }
+                
+          //      cout<<"--2--"<<endl;
+                long long int gsum=0,lsum1=0,lsum2=0;
+                min=-min;
+         //       cout<<"min="<<min<<endl;
+                while(min>=0)
+                {
+                         //    lsum1=0,lsum2=0;
+                                while(neg[min]!=2 && min>=0)
+                               {
+                                 lsum1=lsum1+a1[min];
+                                 lsum2=lsum2+a2[min];
+                                 min--;
+                                                 
+                                } 
+                       //         cout<<"min="<<min<<endl;
+                         //        cout<<"lsum1="<<lsum1<<endl;
+                          //       cout<<"lsum2="<<lsum2<<endl;
+                          if(neg[min]==2){
+                                if(lsum1>lsum2)
+                                gsum+=lsum1;
+                                else
+                                gsum+=lsum2;
+                                gsum+=a1[min];
+                                lsum1=0,lsum2=0;
+                                }
+                                min--;
+                }
+                
+                
+                
+            //   cout<<"gsum="<<gsum<<endl;
+       //         cout<<"min="<<min<<endl;
+         //       cout<<"max="<<max<<endl;
+              //  for(int i=0;i<=max;i++)
+           //     cout<<"pos"<<pos[i]<<" ";
+             //   cout<<endl;
+                while(min<=max)
+                {
+                               
+                             
+                               while(pos[min]!=2 && min<=max)
+                               {
+                                                 
+                                 lsum1=lsum1+b1[min];
+                                 lsum2=lsum2+b2[min];
+                                 min++;
+                                                 
+                                } 
+                         //       cout<<"min="<<min<<endl;
+                        //        cout<<"lsum1="<<lsum1<<endl;
+                           //     cout<<"lsum2="<<lsum2<<endl;
+                                if(lsum1>lsum2)
+                                gsum=gsum+lsum1;
+                                else
+                                gsum=gsum+lsum2;
+                            //    cout<<"gsum="<<gsum<<endl;
+                            if(pos[min]==2)
+                                gsum+=b1[min];
+                                  lsum1=0;lsum2=0;
+                             //   cout<<"gsum="<<gsum<<endl;
+                                min++;
+                }
+              //  cout<<"--4--"<<endl;
+               printf("%lld\n",gsum);
+               scanf("%d",&n1);
+    }
+    
+    return 0;
+}

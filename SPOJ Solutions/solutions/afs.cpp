@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int p[1000009];
+long long res[1000009];
+
+void pre()
+{
+     res[0]=0;res[1]=0;
+     //memset(p,1,sizeof(int)*10000009);
+     
+//p[0]=0;p[1]=0;p[2]=1;p[3]=1;
+ for(int i=2;i<=1000000;i++)
+ {
+   for(int j=i+i;j<=1000000;j+=i)
+    //if(j%i==0)
+     p[j]=p[j]+i;
+  
+   res[i]=res[i-1]+p[i]+1;
+ }
+}
+int main()
+{
+ int t;
+ pre();
+ scanf("%d",&t);
+ while(t--)
+ {
+           /*
+         for(int i=0;i<20;i++)
+         cout<<p[i]<<" ";  
+         */
+  int n;
+  scanf("%d",&n);
+  printf("%lld\n",res[n]);
+ }
+ return 0;
+}

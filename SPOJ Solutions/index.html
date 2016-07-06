@@ -1,6 +1,6 @@
 ---
 layout: spoj_layout
-active: SPOJ
+active: http://www.spoj.com/users/mjindal/
 ---
 
 <script type="text/javascript">
@@ -14,9 +14,9 @@ active: SPOJ
   <div class="w3-row-padding w3-white" >
     
     		<div >
-    		<b><h2>Arrays</h2></b>
+    		<b><h2>Ad-hoc</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "Arrays"  %}
+    			{% if data.subcategory == "ad-hoc-1" || data.subcategory == " "  %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -29,9 +29,40 @@ active: SPOJ
 			</div>
 
 			<div >
-    		<b><h2>Strings</h2></b>
+    		<b><h2>Math</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "Strings"  %}
+    			{% if data.subcategory == "math" || data.subcategory == "math , big-numbers" || data.subcategory == "math , string" %}
+    			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+  				<p><b><i>Problem: - {{data.problem}}</i></b></p>
+ 				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+ 				 <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+ 				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+ 				<a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+ 				</div>
+ 				{% endif %}
+    		{% endfor %}
+			</div>
+
+        <div >
+        <b><h2>SORTING</h2></b>
+        {% for data in site.data.spoj-solution %}
+          {% if data.subcategory == "sorting" %}
+          <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+          <p><b><i>Problem: - {{data.problem}}</i></b></p>
+         <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+         <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+        <!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+        <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+
+			<div >
+    		<b><h2>Binary Search</h2></b>
+    		{% for data in site.data.spoj-solution %}
+    			{% if data.subcategory == "binary-search"  %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -45,9 +76,9 @@ active: SPOJ
 
 
 			<div >
-    		<b><h2>Trees</h2></b>
+    		<b><h2>Dynamic Programming</h2></b>
     		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "Trees"  %}
+    			{% if data.subcategory == "dynamic-programming"  %}
     			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
   				<p><b><i>Problem: - {{data.problem}}</i></b></p>
  				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
@@ -59,20 +90,49 @@ active: SPOJ
     		{% endfor %}
 			</div>
 
+        <div >
+        <b><h2>TREE</h2></b>
+        {% for data in site.data.spoj-solution %}
+          {% if data.subcategory == "tree , binary-search" || data.subcategory == "mst" %}
+          <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+          <p><b><i>Problem: - {{data.problem}}</i></b></p>
+         <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+         <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+        <!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+        <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
 
-			<div >
-    		<b><h2>Strings</h2></b>
-    		{% for data in site.data.spoj-solution %}
-    			{% if data.subcategory == "Dynamic Programming"  %}
-    			<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
-  				<p><b><i>Problem: - {{data.problem}}</i></b></p>
- 				 <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
- 				 <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
- 				<!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
- 				<a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
- 				</div>
- 				{% endif %}
-    		{% endfor %}
-			</div>
+        <div >
+        <b><h2>GRAPH</h2></b>
+        {% for data in site.data.spoj-solution %}
+          {% if data.subcategory == "dfs" || data.subcategory == "bfs" || data.subcategory == "graph" %}
+          <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+          <p><b><i>Problem: - {{data.problem}}</i></b></p>
+         <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+         <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+        <!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+        <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+      <div >
+        <b><h2>Sliding Window</h2></b>
+        {% for data in site.data.spoj-solution %}
+          {% if data.subcategory == "sliding-window-1"  %}
+          <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+          <p><b><i>Problem: - {{data.problem}}</i></b></p>
+         <p>Description:- <a href="{{data.description}}">{{data.description}}</a></p>
+         <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> 
+        <!-- <p><iframe src="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" frameborder="0" height="400" width="95%"></iframe></p> -->
+        <a href="{% capture url %}filename={{data.download}}{% endcapture %}{{site.baseurl}}/SPOJ%20Solutions/solution.html?{{ url }}">View</a></p>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
 
   </div>

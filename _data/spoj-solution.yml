@@ -1,7 +1,7 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Arrays
+    subcategory: 
     problem: ABA12D - Sum of divisors!
     description: 'http://www.spoj.com/problems/ABA12D/'
     solution: "solution is here--1-- "
@@ -10,7 +10,7 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Dynamic Programming
+    subcategory: 
     problem: ABCD - Colours A, B, C, D
     description: 'http://www.spoj.com/problems/ABCD/'
     solution: "solution is here--1-- "
@@ -19,7 +19,7 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Strings
+    subcategory: 
     problem: ABCDEF - ABCDEF
     description: 'http://www.spoj.com/problems/ABCDEF/'
     solution: "solution is here--1-- "
@@ -28,7 +28,7 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Trees
+    subcategory: 
     problem: ABCPATH - ABC Path
     description: 'http://www.spoj.com/problems/ABCPATH/'
     solution: "solution is here--1-- "
@@ -37,7 +37,7 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Array
+    subcategory: 
     problem: ABSP1 - abs(a-b) I
     description: 'http://www.spoj.com/problems/ABSP1/'
     solution: "solution is here--1-- "
@@ -46,8 +46,792 @@
 -   title: SPOJ 
     folder: blogs
     category: ALL
-    subcategory: Strings
+    subcategory: 
     problem: ABSYS - Anti-Blot System
     description: 'http://www.spoj.com/problems/ABSYS/'
     solution: "solution is here--1-- "
     download: "sumOfDivisiors.txt"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: ACODE - Alphacode
+    description: 'http://www.spoj.com/problems/ACODE/'
+    solution: "solution is here--1-- "
+    download: "alphacode.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ACPC10A - What’s Next
+    description: 'http://www.spoj.com/problems/ACPC10A/'
+    solution: "solution is here--1-- "
+    download: "whatsnext.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ACPC11B - Between the Mountains
+    description: 'http://www.spoj.com/problems/ACPC11B/'
+    solution: "solution is here--1-- "
+    download: "betweenTheMountains.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ADDREV - Adding Reversed Numbers
+    description: 'http://www.spoj.com/problems/ADDREV/'
+    solution: "solution is here--1-- "
+    download: "addingReversedNumbers.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ADV04J - Invisible point
+    description: 'http://www.spoj.com/problems/ADV04J/'
+    solution: "solution is here--1-- "
+    download: "invisiblePoint.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ADV04L - Miles and kilometers
+    description: 'http://www.spoj.com/problems/ADV04L/'
+    solution: "solution is here--1-- "
+    download: "mileAndKilometers.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: binary-search
+    problem: AGGRCOW - Aggressive cows
+    description: 'http://www.spoj.com/problems/AGGRCOW/'
+    solution: "solution is here--1-- "
+    download: "aggressiveCows.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: AFS - Amazing Factor Sequence
+    description: 'http://www.spoj.com/problems/AFS/'
+    solution: "solution is here--1-- "
+    download: "afs.cpp"
+
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: AE00 - Rectangles
+    description: 'http://www.spoj.com/problems/AE00/'
+    solution: "solution is here--1-- "
+    download: "rectangles.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: AIBOHP - Aibohphobia
+    description: 'http://www.spoj.com/problems/AIBOHP/'
+    solution: "solution is here--1-- "
+    download: "aibohphobia.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ALICESIE - Alice Sieve
+    description: 'http://www.spoj.com/problems/ALICESIE/'
+    solution: "solution is here--1-- "
+    download: "aliceSieve.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: sliding-window-1
+    problem: ALIEN - Aliens at the train
+    description: 'http://www.spoj.com/problems/ALIEN/'
+    solution: "solution is here--1-- "
+    download: "aliens.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dfs
+    problem: ALLIZWEL - ALL IZZ WELL
+    description: 'http://www.spoj.com/problems/ALLIZWEL/'
+    solution: "solution is here--1-- "
+    download: "allIzWell.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: AMR10G - Christmas Play
+    description: 'http://www.spoj.com/problems/AMR10G/'
+    solution: "solution is here--1-- "
+    download: "christmasPlay.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: AMR11E - Distinct Primes
+    description: 'http://www.spoj.com/problems/AMR11E/'
+    solution: "solution is here--1-- "
+    download: "distinctPrime.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: AMZRCK - Amz Rock
+    description: 'http://www.spoj.com/problems/AMZRCK/'
+    solution: "solution is here--1-- "
+    download: "amzRock.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ANAGR - Anagrams
+    description: 'http://www.spoj.com/problems/ANAGR/'
+    solution: "solution is here--1-- "
+    download: "anagrams.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: ANARC05B - The Double HeLiX
+    description: 'http://www.spoj.com/problems/ANARC05B/'
+    solution: "solution is here--1-- "
+    download: "theDoubleHeLiX.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: ANARC05H - Chop Ahoy! Revisited!
+    description: 'http://www.spoj.com/problems/ANARC05H/'
+    solution: "solution is here--1-- "
+    download: "chopAhoyRevisited.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ANARC05I - What is your Logo
+    description: 'http://www.spoj.com/problems/ANARC05I/'
+    solution: "solution is here--1-- "
+    download: "whatIsYourLogo.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: graph
+    problem: ANARC08G - Think I will Buy Me a Football Team
+    description: 'http://www.spoj.com/problems/ANARC08G/'
+    solution: "solution is here--1-- "
+    download: "thinkIWillBuyMeAFootballTeam.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ANARC08H - Musical Chairs
+    description: 'http://www.spoj.com/problems/ANARC08H/'
+    solution: "solution is here--1-- "
+    download: "musicalChairs.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: ANARC09A - Seinfeld
+    description: 'http://www.spoj.com/problems/ANARC09A/'
+    solution: "solution is here--1-- "
+    download: "seinfeld.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: APS - Amazing Prime Sequence
+    description: 'http://www.spoj.com/problems/APS/'
+    solution: "solution is here--1-- "
+    download: "amazingPrimeSequence.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: sorting
+    problem: ARRANGE - Arranging Amplifiers
+    description: 'http://www.spoj.com/problems/ARRANGE/'
+    solution: "solution is here--1-- "
+    download: "arrangingAmplifiers.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ARRAYSUB - subarrays
+    description: 'http://www.spoj.com/problems/ARRAYSUB/'
+    solution: "solution is here--1-- "
+    download: "subarrays.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: ASCDFIB - Ascending Fibonacci Numbers
+    description: 'http://www.spoj.com/problems/ASCDFIB/'
+    solution: "solution is here--1-- "
+    download: "ascendingFibonacciNumbers.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: ATOMS - Atoms in the Lab
+    description: 'http://www.spoj.com/problems/ATOMS/'
+    solution: "solution is here--1-- "
+    download: "atomsInTheLab.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: BALLOT - Distributing Ballot Boxes
+    description: 'http://www.spoj.com/problems/BALLOT/'
+    solution: "solution is here--1-- "
+    download: "distributingBallotBoxes.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: BANDW - Black and White
+    description: 'http://www.spoj.com/problems/BANDW/'
+    solution: "solution is here--1-- "
+    download: "blackAndWhite.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: BEHAPPY - Be Awesome As Barney Stinson
+    description: 'http://www.spoj.com/problems/BEHAPPY/'
+    solution: "solution is here--1-- "
+    download: "beAwesomeAsBarneyStinson.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dfs
+    problem: BENEFACT - The Benefactor
+    description: 'http://www.spoj.com/problems/BENEFACT/'
+    solution: "solution is here--1-- "
+    download: "theBenefactor.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math , string
+    problem: BINSTIRL - Binary Stirling Numbers
+    description: 'http://www.spoj.com/problems/BINSTIRL/'
+    solution: "solution is here--1-- "
+    download: "binaryStirlingNumbers.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: BISHOPS - Bishops
+    description: 'http://www.spoj.com/problems/BISHOPS/'
+    solution: "solution is here--1-- "
+    download: "bishops.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory:
+    problem: BLACKOUT - Blackout
+    description: 'http://www.spoj.com/problems/BLACKOUT/'
+    solution: "solution is here--1-- "
+    download: "blackout.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory:
+    problem: BOGGLE - Boggle Scoring
+    description: 'http://www.spoj.com/problems/BOGGLE/'
+    solution: "solution is here--1-- "
+    download: "boggleScoring.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: tree , binary-search
+    problem: BRIDGE - Building Bridges
+    description: 'http://www.spoj.com/problems/BRIDGE/'
+    solution: "solution is here--1-- "
+    download: "buildingBridges.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory:
+    problem: BUREAU - Bureaucracy
+    description: 'http://www.spoj.com/problems/BUREAU/'
+    solution: "solution is here--1-- "
+    download: "bureaucracy.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: greedy
+    problem: BUSYMAN - I AM VERY BUSY
+    description: 'http://www.spoj.com/problems/BUSYMAN/'
+    solution: "solution is here--1-- "
+    download: "busyman.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: BWIDOW - Black Widow Rings
+    description: 'http://www.spoj.com/problems/BWIDOW/'
+    solution: "solution is here--1-- "
+    download: "blackWidowRings.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory:
+    problem: BYECAKES - Bye Bye Cakes
+    description: 'http://www.spoj.com/problems/BYECAKES/'
+    solution: "solution is here--1-- "
+    download: "byeByeCakes.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: BYTESE2 - The Great Ball
+    description: 'http://www.spoj.com/problems/BYTESE2/'
+    solution: "solution is here--1-- "
+    download: "theGreatBall.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: BYTESM2 - Philosophers Stone
+    description: 'http://www.spoj.com/problems/BYTESM2/'
+    solution: "solution is here--1-- "
+    download: "philosophersStone.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: CADYDIST - Candy Distribution
+    description: 'http://www.spoj.com/problems/CADYDIST/'
+    solution: "solution is here--1-- "
+    download: "candyDistribution.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: CANDY - Candy I
+    description: 'http://www.spoj.com/problems/CANDY/'
+    solution: "solution is here--1-- "
+    download: "candy.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: CANDY3 - Candy III
+    description: 'http://www.spoj.com/problems/CANDY3/'
+    solution: "solution is here--1-- "
+    download: "candy3.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: CANTON - Count on Cantor
+    description: 'http://www.spoj.com/problems/CANTON/'
+    solution: "solution is here--1-- "
+    download: "countOnCantor.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: bfs
+    problem: CATM - The Cats and the Mouse
+    description: 'http://www.spoj.com/problems/CATM/'
+    solution: "solution is here--1-- "
+    download: "catsAndMouse.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: CFPARTY - Party
+    description: 'http://www.spoj.com/problems/CFPARTY/'
+    solution: "solution is here--1-- "
+    download: "party.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: CHAIR - Chairs
+    description: 'http://www.spoj.com/problems/CHAIR/'
+    solution: "solution is here--1-- "
+    download: "chairs.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: COINS - Bytelandian gold coins
+    description: 'http://www.spoj.com/problems/COINS/'
+    solution: "solution is here--1-- "
+    download: "bytelandianGoldCoins.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: CRAN02 - Roommate Agreement
+    description: 'http://www.spoj.com/problems/CRAN02/'
+    solution: "solution is here--1-- "
+    download: "roommateAgreement.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: binary-search
+    problem: CRAN04 - Audition
+    description: 'http://www.spoj.com/problems/CRAN04/'
+    solution: "solution is here--1-- "
+    download: "audition.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: CRDS - Cards
+    description: 'http://www.spoj.com/problems/CRDS/'
+    solution: "solution is here--1-- "
+    download: "cards.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: CRSCNTRY - Cross-country
+    description: 'http://www.spoj.com/problems/CRSCNTRY/'
+    solution: "solution is here--1-- "
+    download: "crossCountry.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: mst
+    problem: CSTREET - Cobbled streets
+    description: 'http://www.spoj.com/problems/CSTREET/'
+    solution: "solution is here--1-- "
+    download: "cobbledStreets.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: CZ_PROB1 - Summing to a Square Prime
+    description: 'http://www.spoj.com/problems/CZ_PROB1/'
+    solution: "solution is here--1-- "
+    download: "summingToSquarePrime.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: DANGER - In Danger
+    description: 'http://www.spoj.com/problems/DANGER/'
+    solution: "solution is here--1-- "
+    download: "inDanger.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: tree , binary-search
+    problem: DCEPC206 - Its a Murder!
+    description: 'http://www.spoj.com/problems/DCEPC206/'
+    solution: "solution is here--1-- "
+    download: "itsAMurder.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: DCEPC501 - Save Thy Toys
+    description: 'http://www.spoj.com/problems/DCEPC501/'
+    solution: "solution is here--1-- "
+    download: "SaveThyToys.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: DEFKIN - Defense of a Kingdom
+    description: 'http://www.spoj.com/problems/DEFKIN/'
+    solution: "solution is here--1-- "
+    download: "defenseofKingdom.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: DIEHARD - DIE HARD
+    description: 'http://www.spoj.com/problems/DIEHARD/'
+    solution: "solution is here--1-- "
+    download: "dieHard.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: DOTAA - DOTA HEROES
+    description: 'http://www.spoj.com/problems/DOTAA/'
+    solution: "solution is here--1-- "
+    download: "dotaHeroes.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: EC_CONB - Even Numbers
+    description: 'http://www.spoj.com/problems/EC_CONB/'
+    solution: "solution is here--1-- "
+    download: "evenNumbers.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: EDIST - Edit distance
+    description: 'http://www.spoj.com/problems/EDIST/'
+    solution: "solution is here--1-- "
+    download: "editDistance.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: EGYPIZZA - Pizza
+    description: 'http://www.spoj.com/problems/EGYPIZZA/'
+    solution: "solution is here--1-- "
+    download: "pizza.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: EIGHTS - Triple Fat Ladies
+    description: 'http://www.spoj.com/problems/EIGHTS/'
+    solution: "solution is here--1-- "
+    download: "tripleFatLadies.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: binary-search
+    problem: EKO - Eko
+    description: 'http://www.spoj.com/problems/EKO/'
+    solution: "solution is here--1-- "
+    download: "eko.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: ENIGMATH - PLAY WITH MATH
+    description: 'http://www.spoj.com/problems/ENIGMATH/'
+    solution: "solution is here--1-- "
+    download: "playWithMath.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: EMTY2 - Can You Make It Empty 2
+    description: 'http://www.spoj.com/problems/EMTY2/'
+    solution: "solution is here--1-- "
+    download: "canYouMakeItEmpty.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: FACEFRND - Friends of Friends
+    description: 'http://www.spoj.com/problems/FACEFRND/'
+    solution: "solution is here--1-- "
+    download: "friendsOfFriends.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: FARIDA - Princess Farida
+    description: 'http://www.spoj.com/problems/FARIDA/'
+    solution: "solution is here--1-- "
+    download: "farida.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: FASHION - Fashion Shows
+    description: 'http://www.spoj.com/problems/FASHION/'
+    solution: "solution is here--1-- "
+    download: "fashionShows.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: FAVDICE - Favorite Dice
+    description: 'http://www.spoj.com/problems/FAVDICE/'
+    solution: "solution is here--1-- "
+    download: "favoriteDice.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: FRND - FRIENDSHIP!!!
+    description: 'http://www.spoj.com/problems/FRND/'
+    solution: "solution is here--1-- "
+    download: "friendship.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: FENCE1 - Build a Fence
+    description: 'http://www.spoj.com/problems/FENCE1/'
+    solution: "solution is here--1-- "
+    download: "buildAFence.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math , big-numbers
+    problem: FCTRL2 - Small factorials
+    description: 'http://www.spoj.com/problems/FCTRL2/'
+    solution: "solution is here--1-- "
+    download: "smallFactorial.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: FCTRL - Factorial
+    description: 'http://www.spoj.com/problems/FCTRL/'
+    solution: "solution is here--1-- "
+    download: "factorial.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: GAMES - HOW MANY GAMES
+    description: 'http://www.spoj.com/problems/GAMES/'
+    solution: "solution is here--1-- "
+    download: "howManyGames.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: GIRLSNBS - Girls and Boys
+    description: 'http://www.spoj.com/problems/GIRLSNBS/'
+    solution: "solution is here--1-- "
+    download: "girlsAndBoys.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: dynamic-programming
+    problem: GNYR09F - Adjacent Bit Counts
+    description: 'http://www.spoj.com/problems/GNYR09F/'
+    solution: "solution is here--1-- "
+    download: "adjacentBitCounts.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: GOPI_SW - Gopi and Sandwich
+    description: 'http://www.spoj.com/problems/GOPI_SW/'
+    solution: "solution is here--1-- "
+    download: "gopiAndSandwich.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: math
+    problem: HANGOVER - Hangover
+    description: 'http://www.spoj.com/problems/HANGOVER/'
+    solution: "solution is here--1-- "
+    download: "hangover.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: HARSHAD - Devlali Numbers
+    description: 'http://www.spoj.com/problems/HARSHAD/'
+    solution: "solution is here--1-- "
+    download: "devlaliNumbers.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: 
+    problem: HISTOGRA - Largest Rectangle in a Histogram
+    description: 'http://www.spoj.com/problems/HISTOGRA/'
+    solution: "solution is here--1-- "
+    download: "largestRectangleInHistogram.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: sliding-window-1
+    problem: HOTELS - Hotels Along the Croatian Coast
+    description: 'http://www.spoj.com/problems/HOTELS/'
+    solution: "solution is here--1-- "
+    download: "hotels.cpp"
+    
+-   title: SPOJ 
+    folder: blogs
+    category: ALL
+    subcategory: ad-hoc-1
+    problem: HPYNOS - Happy Numbers I
+    description: 'http://www.spoj.com/problems/HPYNOS/'
+    solution: "solution is here--1-- "
+    download: "happyNumbers.cpp"
+

@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int a[1000][1000];
+int main()
+{
+    
+    int n,count=1;
+    while(1)
+    {
+            scanf("%d",&n);
+            if(n==0)
+            break;
+            
+            int b[1000]={0};
+            long long int bsum=0,asum=0;
+              for(int i=0;i<n;i++)
+            {
+                    for(int j=0;j<n;j++)
+                    {
+                       scanf("%d",&a[i][j]);
+                       bsum=bsum+a[i][j];
+                    }
+            }   
+            
+            for(int i=0;i<n;i++)
+            {
+                    for(int j=0;j<n;j++)
+                    {
+                         b[j]=b[j]+a[i][j]; 
+                         if(i!=j)
+                         b[i]=b[i]-a[i][j];  
+                           
+                    }
+            }
+    
+             for(int i=0;i<n;i++)
+            {
+                      if(b[i]>0)
+                      asum=asum+b[i];
+            }   
+    
+            printf("%d. %lld %lld\n",count,bsum,asum);
+            count++;
+    }
+    return 0;
+}

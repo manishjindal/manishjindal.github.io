@@ -1,0 +1,23 @@
+JMocket -
+
+public void testsubmitJob(@Mocked final GridUtil gridUtil) throws Exception
+{
+		//final GridUtil gridUtil =new GridUtil();
+		new NonStrictExpectations(gridUtil)
+		{
+			{
+				gridUtil.submit("blah","blah","blah");
+				result = 1;
+			}
+		};
+}
+
+
+--- Mock Single Method.
+
+new MockUp<GridUtil>(){
+		@Mock protected int submit(String cmd, String args, String logFilePath) throws IOException, InterruptedException
+		{
+			return 0;
+		}
+};

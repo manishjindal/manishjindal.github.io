@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+int main()
+{    
+    while(1)
+    {
+              char s[1000],t[1000];
+              scanf("%s%s",s,t);
+              int count=0;
+              
+              if(s[0]=='*')
+              break;
+              
+              int i=0;
+              while(1)
+              {
+                      
+                      if(s[i]=='\0')        
+                      break;
+                      int flag=0;
+                      while(s[i]!='\0' && s[i]!=t[i])
+                      {
+                           if(flag==0)
+                           {
+                             count++;
+                             flag=1;
+                             }          
+                              i++;         
+                      }
+                      
+                      if(flag==0 && s[i]!='\0')
+                      i++;
+                      
+                     // i++;
+              }
+              
+              printf("%d\n",count);
+    }
+    return 0;
+}
