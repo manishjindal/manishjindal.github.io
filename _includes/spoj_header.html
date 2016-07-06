@@ -14,12 +14,17 @@
 
       <button class="w3-btn {% if page.url != '/SPOJ%20Solutions/' %}w3-white{% endif %} w3-hide-small" id="all"><i class="fa fa-map-pin w3-margin-right"></i>All</button>
       
-      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/Arrays.html' %}w3-white{% endif %}" id="arrays"><i class="fa fa-map-pin 
-      w3-margin-right"></i>Arrays</button>
-      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/Strings.html' %}w3-white{% endif %}" id="strings"><i class="fa fa-map-pin 
-      w3-margin-right"></i>Strings</button>
-      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/Trees.html' %}w3-white{% endif %}" id="trees"><i class="fa fa-map-pin w3-margin-right"></i>Trees</button>
-       <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/DynamicProgramming.html' %}w3-white{% endif %}" id="dp"><i class="fa fa-map-pin w3-margin-right"></i>Dynamic Programming</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/Ad-hoc.html' %}w3-white{% endif %}" id="ad-hoc"><i class="fa fa-map-pin 
+      w3-margin-right"></i>Ad-hoc</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/binary-search.html' %}w3-white{% endif %}" id="bins"><i class="fa fa-map-pin 
+      w3-margin-right"></i>Binary Search</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/sorting.html' %}w3-white{% endif %}" id="sorting"><i class="fa fa-map-pin 
+      w3-margin-right"></i>Sorting</button>
+      <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/tree.html' %}w3-white{% endif %}" id="trees"><i class="fa fa-map-pin w3-margin-right"></i>Trees</button>
+       <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/graph.html' %}w3-white{% endif %}" id="graph"><i class="fa fa-map-pin w3-margin-right"></i>Graphs</button>
+       <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/Math.html' %}w3-white{% endif %}" id="math"><i class="fa fa-map-pin w3-margin-right"></i>Math</button>
+       <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/sliding-window.html' %}w3-white{% endif %}" id="sliding-window"><i class="fa fa-map-pin w3-margin-right"></i>Sliding Window</button>
+       <button class="w3-btn w3-hide-small {% if page.url != '/SPOJ%20Solutions/dynamic-programming.html' %}w3-white{% endif %}" id="dp"><i class="fa fa-map-pin w3-margin-right"></i>Dynamic Programming</button>
     </div>
     
   </header>
@@ -30,25 +35,45 @@
         localStorage.setItem("selected","All");
     };
 
-    document.getElementById("arrays").onclick = function () {
-        location.href = "{{site.baseurl}}/SPOJ%20Solutions/Arrays.html";
-        localStorage.setItem("selected","Arrays");
+    document.getElementById("ad-hoc").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/Ad-hoc.html";
+        localStorage.setItem("selected","Ad-hoc");
     };
 
-    document.getElementById("strings").onclick = function () {
-        location.href = "{{site.baseurl}}/SPOJ%20Solutions/Strings.html";
-         localStorage.setItem("selected","Strings");
+    document.getElementById("bins").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/binary-search.html";
+         localStorage.setItem("selected","binary-search");
     };
 
+    document.getElementById("sorting").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/sorting.html";
+        localStorage.setItem("selected","sorting");
+    };
 
     document.getElementById("trees").onclick = function () {
-        location.href = "{{site.baseurl}}/SPOJ%20Solutions/Trees.html";
-          localStorage.setItem("selected","trees");
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/tree.html";
+         localStorage.setItem("selected","tree");
+    };
+
+    document.getElementById("graph").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/graph.html";
+        localStorage.setItem("selected","graph");
+    };
+
+    document.getElementById("math").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/Math.html";
+         localStorage.setItem("selected","math");
+    };
+
+
+    document.getElementById("sliding-window").onclick = function () {
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/sliding-window.html";
+          localStorage.setItem("selected","sliding-window");
     };
 
     document.getElementById("dp").onclick = function () {
-        location.href = "{{site.baseurl}}/SPOJ%20Solutions/DynamicProgramming.html";
-          localStorage.setItem("selected","DP");
+        location.href = "{{site.baseurl}}/SPOJ%20Solutions/dynamic-programming.html";
+          localStorage.setItem("selected","dp");
     };
 
 </script>
