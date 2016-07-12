@@ -1,0 +1,106 @@
+sub regexMatchIgnoreCase {
+	my ($line) = @_;
+
+	if ($line =~ /mjindal/i){
+		print "mjindal is passed\n";
+	}else {
+		print "line doesn't contains mjindal\n";
+	}
+}
+
+sub regexMatchWithoutIgnoreCase {
+	my ($line) = @_;
+
+	if ($line =~ /mjindal/){
+		print "mjindal is passed\n";
+	}else {
+		print "Ignoring case shows - line doesn't contains mjindal\n";
+	}
+}
+
+sub regexDoesNotMatch {
+	my ($line) = @_;
+
+	if ($line !~ /mjindal/i){
+		print "mjindal is not passed\n";
+	}else {
+		print "line contains mjindal\n";
+	}
+}
+
+sub lineStartswith {
+	my ($line) = @_;
+
+	if ($line =~ /^this/i){
+		print "line starts with this\n";
+	}else {
+		print "line doesn't start with this\n";
+	}
+}
+
+sub lineEndswith {
+	my ($line) = @_;
+
+	if ($line =~ /e$/i){
+		print "line ends with e\n";
+	}else {
+		print "line doesn't end with e\n";
+	}
+}
+
+
+
+regexMatchIgnoreCase("this line contains mjiNdal ");
+
+regexMatchWithoutIgnoreCase("this line contains mjiNdal ");
+
+regexDoesNotMatch("this line contains mjindal");
+
+lineStartswith("this line starts with this");
+
+lineStartswith("line doesn't start with this");
+
+lineEndswith("this line ends with e");
+
+=POD
+
+
+Here are some special RE characters and their meaning
+
+.	# Any single character except a newline
+^	# The beginning of the line or string
+$	# The end of the line or string
+*	# Zero or more of the last character
++	# One or more of the last character
+?	# Zero or one of the last character
+and here are some example matches. Remember that should be enclosed in /.../ slashes to be used.
+t.e	# t followed by anthing followed by e
+	# This will match the
+	#                 tre
+	#                 tle
+	# but not te
+	#         tale
+^f	# f at the beginning of a line
+^ftp	# ftp at the beginning of a line
+e$	# e at the end of a line
+tle$	# tle at the end of a line
+und*	# un followed by zero or more d characters
+	# This will match un
+	#                 und
+	#                 undd
+	#                 unddd (etc)
+.*	# Any string without a newline. This is because
+	# the . matches anything except a newline and
+	# the * means zero or more of these.
+^$	# A line with nothing in it.
+There are even more options. Square brackets are used to match any one of the characters inside them. Inside square brackets a - indicates "between" and a ^ at the beginning means "not":
+
+[qjk]		# Either q or j or k
+[^qjk]		# Neither q nor j nor k
+[a-z]		# Anything from a to z inclusive
+[^a-z]		# No lower case letters
+[a-zA-Z]	# Any letter
+[a-z]+		# Any non-zero sequence of lower case letters
+
+=cut
+

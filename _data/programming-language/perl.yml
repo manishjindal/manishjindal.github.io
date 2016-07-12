@@ -4,7 +4,7 @@
     meta: Write a function to read from one file and write to another file
     source:
     category: Perl
-    subcategory: Datatype
+    subcategory: io
     filePath: "Perl/readFromAndWriteToFile.txt"
 
 -   layout: perl
@@ -13,5 +13,50 @@
     meta: Write a function to read from one file and write to another file
     source:
     category: Perl
-    subcategory: Datatype
-    filePath: "Perl/readFromAndWriteToFile.txt"
+    subcategory: io
+    filePath: "Perl/writeToFile.txt"
+
+-   layout: perl
+    title: EqualityOperator
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: operator
+    filePath: "Perl/equalityOperator.txt"
+
+-   layout: perl
+    title: LogicalOpeartors
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: operator
+    filePath: "Perl/logicalOpeartors.txt"
+
+-   layout: perl
+    title: MiscOperator
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: operator
+    filePath: "Perl/miscOperator.txt"
+
+-   layout: perl
+    title: Passing Argument to Function
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: subroutine
+    filePath: "Perl/paasingArugumet.txt"
+
+-   layout: perl
+    title: Regular Expression
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: regex
+    filePath: "Perl/regex.txt"

@@ -6,10 +6,10 @@ active: Perl
 
   <div class="w3-row-padding w3-white"> 
             <div>
-            <b><h2>Datatype</h2></b>
+            <b><h2>Operator</h2></b>
             <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
                  {% for blog in site.data.programming-language.perl %}
-                    {% if {{blog.subcategory}} == 'Datatype' %}
+                    {% if {{blog.subcategory}} == 'operator' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
@@ -22,10 +22,10 @@ active: Perl
             </div>
 
             <div>
-            <b><h2>Array</h2></b>
+            <b><h2>Subroutine</h2></b>
             <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
                  {% for blog in site.data.programming-language.perl %}
-                    {% if {{blog.subcategory}} == 'Array' %}
+                    {% if {{blog.subcategory}} == 'subroutine' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
@@ -41,7 +41,7 @@ active: Perl
             <b><h2>Regular Expression</h2></b>
             <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
                  {% for blog in site.data.programming-language.perl %}
-                    {% if {{blog.subcategory}} == 'Regular Expression' %}
+                    {% if {{blog.subcategory}} == 'regex' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
@@ -57,7 +57,7 @@ active: Perl
             <b><h2>Input Output</h2></b>
             <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
                  {% for blog in site.data.programming-language.perl %}
-                    {% if {{blog.subcategory}} == 'Input Output' %}
+                    {% if {{blog.subcategory}} == 'io' %}
                     <ul >
                         <li>
                             <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>

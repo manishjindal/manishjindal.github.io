@@ -1,0 +1,29 @@
+sub concatenate {
+	my $a = "abc";
+	my $b = "def";
+	my $c;
+
+	$c = $a . $b;
+
+	print $c;
+
+}
+
+sub repeatation {
+
+	my $a = 'a';
+
+	print "double is =" . $a x 2 . "\n";
+	print "triple is = " . $a x 3 . "\n";
+}
+
+sub printRange {
+	print (2..10);
+}
+
+
+concatenate();
+
+repeatation();
+
+printRange();

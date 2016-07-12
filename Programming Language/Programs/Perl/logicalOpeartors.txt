@@ -1,0 +1,49 @@
+sub checkOrCondition1 {
+
+	my $value = 3;
+
+	if ( $value == 3 or $value == 5){
+		print "checking OR condition\n";
+	}else {
+		print "OR statement failed\n";
+	}
+}
+
+sub checkOrCondition2 {
+
+	my $value = 3;
+
+	if ( $value == 3 || $value == 5){
+		print "checking OR condition\n";
+	}else {
+		print "OR statement failed\n";
+	}
+}
+
+sub checkAndCondition1 {
+
+	my $value1 = 3;
+	my $value2 = 5;
+	if ( $value1 == 3 and $value2 == 5){
+		print "And condition Passed\n";
+	}else {
+		print "And condition failed\n";
+	}
+}
+
+sub checkAndCondition2 {
+
+	my $value1 = 3;
+	my $value2 = 5;
+	if ( $value1 == 3 && $value2 == 5){
+		print "And condition Passed\n";
+	}else {
+		print "And condition failed\n";
+	}
+}
+
+
+checkOrCondition1();
+checkOrCondition2();
+checkAndCondition1();
+checkAndCondition2();

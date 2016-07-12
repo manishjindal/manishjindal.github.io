@@ -1,0 +1,43 @@
+sub checkNumericEqual {
+	my $a = 5;
+	my $b = $a;
+
+	if ($a == $b) {
+		print "Equal";
+	}else {
+		print "Not Equal";
+	}
+
+	if ($a eq $b) {
+		print "Equal";
+	}else {
+		print "Not Equal";
+	}
+}
+
+sub checkStringEqual {
+	my $a = "abc";
+	my $b = $a;
+
+	if ($a eq $b) {
+		print "Equal";
+	}else {
+		print "Not Equal";
+	}
+
+}
+
+checkNumericEqual();
+checkStringEqual();
+
+=POD
+	Numeric      String
+	==				eq
+	!=				ne
+	>				gt
+	<				lt
+	>=				ge
+	<=				le
+					cmp "Returns -1, 0, or 1 depending on whether the left argument is stringwise
+					 less than, equal to, or greater than the right argument."
+=cut

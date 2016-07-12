@@ -1,0 +1,27 @@
+#Accept multiple argumet
+sub logMsg {
+	my ($fname,$mname,$lname) = @_;
+	if (!defined($fname)){
+		$fname = "Firstname";
+	}else {
+		print "fname defined = $fname\n";
+	}
+
+	if (!defined($mname)){
+		$mname = "Middlename";
+	}else {
+		print "mname defined = $mname\n";
+	}
+
+	if (!defined($lname)){
+		$lname = "Lastname";
+	}else {
+		print "lname defined = $lname\n";
+	}
+
+	print "--" . ": $fname\t$mname\t$lname\n";
+}
+
+logMsg("manish" , "kumar" , "jindal");
+logMsg("DOB:25/09/01991");
+
