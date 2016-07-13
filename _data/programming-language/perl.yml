@@ -68,7 +68,7 @@
     source:
     category: Perl
     subcategory: variable
-    filePath: "Perl/arrays.txt"
+    filePath: "Perl/scalar.txt"
 
 -   layout: perl
     title: Arrays
@@ -77,4 +77,4 @@
     source:
     category: Perl
     subcategory: variable
-    filePath: "Perl/scalar.txt"
+    filePath: "Perl/arrays.txt"
