@@ -60,3 +60,21 @@
     category: Perl
     subcategory: regex
     filePath: "Perl/regex.txt"
+
+-   layout: perl
+    title: Scalar variable
+    detail: 
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: variable
+    filePath: "Perl/arrays.txt"
+
+-   layout: perl
+    title: Arrays
+    detail: Define Arrays and operations on arrays
+    meta: Write a function to read from one file and write to another file
+    source:
+    category: Perl
+    subcategory: variable
+    filePath: "Perl/scalar.txt"

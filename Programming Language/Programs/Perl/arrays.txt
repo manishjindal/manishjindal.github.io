@@ -1,0 +1,113 @@
+sub defineAndAccessArrays {
+	
+	#define array in () 
+	my @arr = ("manish" , "kumar" , "jindal");
+	print "Print arrays value --method --1--\n";
+	print @arr[0]."\n";
+	print @arr[1]."\n";
+	print @arr[2]."\n";
+
+	print "Print arrays value --method --2--\n"; #correct way to access individual element
+	print $arr[0]."\n";
+	print $arr[1]."\n";
+	print $arr[2]."\n";
+
+	my $n = @arr;
+	print "number of element in array => $n\n";
+
+	#Another way to define arrys qw// separator is space. 
+
+	my @days = qw/Monday Tuesday Thursday/;
+	print @days[0]."\n";
+
+	#Array can be accessed by neg index also.
+	print "Accessing last element of array => ".$days[-1]."\n";
+}
+
+sub range {
+	#Range 
+
+	my @range = (1..10);
+	print @range."\n";
+
+	my @alpha = (a..z);
+	print "Alpha = > @alpha\n";
+
+	print "num of alpha".@alpha."\n";
+}
+
+sub sliclingArray {
+
+	my @days = qw/Monday Tuesday Wednesday Thursday Friday Saturday Sunday/;
+
+	print  "All days \t @days \n";
+
+	my @weekdays = @days[1..5];
+
+	print "weekdays\t @weekdays\n";
+}
+
+sub replaceArray {
+	my @nums = (1..30);
+
+	print "nums => @nums \n";
+
+	splice(@nums,5,5,22..27);
+
+	print "modified array => @nums\n";
+}
+
+sub sortArray {
+	my @arr = (2,5,3,1,9,7);
+
+	@arr = sort(@arr);
+
+	print @arr;
+}
+
+sub setResetBaseIndex {
+
+	my @arr = (1..10);
+
+	print "Before Reset => $arr[0] \n";
+	
+	$[ = 1;
+
+	print "After reset => $arr[1] \n";
+}
+
+sub mergeArray {
+	my @arr = ((1..5),(6..10));
+	print @arr;
+}
+
+sub addRemoveElementFromArray {
+	# create a simple array
+	@coins = ("Quarter","Dime","Nickel");
+	print "1. \@coins  = @coins\n";
+
+	# add one element at the end of the array
+	push(@coins, "Penny");
+	print "2. \@coins  = @coins\n";
+
+	# add one element at the beginning of the array
+	unshift(@coins, "Dollar");
+	print "3. \@coins  = @coins\n";
+
+	# remove one element from the last of the array.
+	pop(@coins);
+	print "4. \@coins  = @coins\n";
+
+	# remove one element from the beginning of the array.
+	shift(@coins);
+	print "5. \@coins  = @coins\n";
+}
+
+defineAndAccessArrays();
+range();
+sliclingArray();
+replaceArray();
+sortArray();
+setResetBaseIndex();
+mergeArray();
+addRemoveElementFromArray();

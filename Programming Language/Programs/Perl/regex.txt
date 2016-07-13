@@ -48,6 +48,14 @@ sub lineEndswith {
 	}
 }
 
+sub replace {
+
+	my $a = "2015.1";
+	my $b = $a =~ s/\./\_/r;
+
+
+	print $b;
+}
 
 
 regexMatchIgnoreCase("this line contains mjiNdal ");
@@ -61,6 +69,9 @@ lineStartswith("this line starts with this");
 lineStartswith("line doesn't start with this");
 
 lineEndswith("this line ends with e");
+
+
+replace();
 
 =POD
 

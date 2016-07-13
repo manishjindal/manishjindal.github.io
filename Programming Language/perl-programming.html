@@ -21,6 +21,21 @@ active: Perl
             </div>
             </div>
 
+            <b><h2>Variable</h2></b>
+            <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
+                 {% for blog in site.data.programming-language.perl %}
+                    {% if {{blog.subcategory}} == 'variable' %}
+                    <ul >
+                        <li>
+                            <a href="{% capture url %}filename={{blog.filePath}}{% endcapture %}{{site.baseurl}}/Programming%20Language/solution.html?{{ url }}">{{blog.title}}</a>
+                            <p>{{blog.detail}}</p>
+                        </li>
+                    </ul>
+                    {% endif %}
+                  {% endfor %}
+            </div>
+            </div>
+
             <div>
             <b><h2>Subroutine</h2></b>
             <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important">
