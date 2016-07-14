@@ -6,7 +6,7 @@
     
     '
     url: SPOJ%20Solutions
-
+    
 -   title: Projects 
     folder: projects
     img: projects.jpg
@@ -26,3 +26,17 @@
     img: blogs.jpg
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice - browse for more details'
     url: Blogs
+
+
+
+-   title: Tools
+    folder: tools
+    img: tools.jpg
+    content: 'This section describs different tools avaiable in the market and how we can use those tools for ease of our daily life specially in DevOps'
+    url: Tools
+
+-   title: Technology
+    folder: technology
+    img: latesttechnology.jpg
+    content: 'New technology in market and why we should opt these techonology ?'
+    url: Popular%20Technologies
