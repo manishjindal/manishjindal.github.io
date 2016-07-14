@@ -1,9 +1,3 @@
--   title: Projects 
-    folder: projects
-    img: projects.jpg
-    content: 'This sections has many projects with detailed problem description given the steps for, how to solve/move towards the solution'
-    url: Projects
-
 -   title: SPOJ
     folder: SPOJ Solutions
     img: spoj.jpg
@@ -12,6 +6,14 @@
     
     '
     url: SPOJ%20Solutions
+    
+-   title: Projects 
+    folder: projects
+    img: projects.jpg
+    content: 'This sections has many projects with detailed problem description given the steps for, how to solve/move towards the solution'
+    url: Projects
+
+
 
 -   title: Programming Problems
     folder: programming
