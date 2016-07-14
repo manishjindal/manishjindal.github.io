@@ -7,8 +7,9 @@
 -   title: SPOJ
     folder: SPOJ Solutions
     img: spoj.jpg
-    content: 'In this section we have solution to many SPOJ problems, user can view/download the solution. User can also filter the question by type like: arrays, strings, dp..
-
+    content: 'In this section we have solution to many SPOJ problems, 
+    user can view/download the solution. User can also filter the question by type like: arrays, strings, dp..
+    
     '
     url: SPOJ%20Solutions
 
