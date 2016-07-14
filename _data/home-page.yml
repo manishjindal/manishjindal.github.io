@@ -10,17 +10,19 @@
     content: 'In this section we have solution to many SPOJ problems, user can view/download the solution. User can also filter the question by type like: arrays, strings, dp..'
     url: SPOJ%20Solutions
 
+-   title: Programming Problems
+    folder: programming
+    img: language.jpg
+    content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
+    url: Programming%20Language
+    
 -   title: Blogs
     folder: blogs
     img: blogs.jpg
     content: 'This section has all the technical blogs, which includes useful tips and tricks in daily programming practice - browse for more details'
     url: Blogs
 
--   title: Programming Problems
-    folder: programming
-    img: language.jpg
-    content: 'This section includes different type of scripting language and Programming language and useful tips and tricks'
-    url: Programming%20Language
+
 
 -   title: Tools
     folder: tools
