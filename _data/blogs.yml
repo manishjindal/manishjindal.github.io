@@ -6,11 +6,11 @@ System was able to check if the person who is accessing account is an intruder o
     url: "jenkins.html"
     tags: 
 
--   title: JAVA 
-    img: java.jpg
+-   title: Running Docker Container
+    img: docker_home.png
     subject: Wikipedia Parsing and Indexing
     description: 'Parsed Wikipedia 43 GB dataset to create index based on tf-idf ranking and created a searching interface to get top results for the user query on any general term. Java, XML, IRE(Information Retrieval and Extraction) techniques'
-    url: "java-blogs.html"
+    url: "docker.html"
     tags: "solution is here--1-- "
 
 -   title: Python 
