@@ -1,0 +1,27 @@
+What is Grrovy =>
+
+1) Groovy is an optionally typed, dynamic language for the Java platform with many features
+that are inspired by languages like Python, Ruby, and Smalltalk, making them available to Java developers using a Java-like syntax.
+
+Groovy: it runs inside the JVM and makes use of Java’s libraries (together called the Java Runtime Environment, or JRE).
+
+Every Groovy type is a subtype of java.lang.Object.
+
+
+2) Integration in the opposite direction is just as easy. 
+Suppose a Groovy class MyGroovyClass is compiled into MyGroovyClass.class and put on the classpath. 
+You can use this Groovy class from within a Java class by typing 
+
+new MyGroovyClass(); // create from Java
+
+
+3) Groovy has three main enhancements over and above those of
+Java: language features, libraries specific to Groovy, and additions to the existing Java
+standard classes (known as the Groovy Development Kit, or GDK).
+
+4) Groovy automatically imports the packages groovy.lang.*, groovy.util.*,
+java.lang.*, java.util.*, java.net.*, and java.io.*, as well as the classes
+java.math.BigInteger and BigDecimal.
+
+*Note that Java automatically imports java.lang.*, but nothing
+else.

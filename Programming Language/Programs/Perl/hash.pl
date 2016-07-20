@@ -19,4 +19,11 @@ sub defineHash {
 	}
 }
 
+sub iterateHash {
+	while (my ($key, $value) = each %CONFIG) {
+		print "$key"."="."$value\n";
+	}
+}
+
 defineHash();
+iterateHash();
