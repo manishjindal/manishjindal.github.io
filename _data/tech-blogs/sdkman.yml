@@ -33,9 +33,9 @@
 
 -   layout: sdkman
     title: Where sdkman installs the sdk ?
-    detail: 'sdkman downloads all the sdk at "C:\Users\<username>\.sdkman\candidates"
-            example 
-            if you have installed multiple version of groovy, you will see all the versions at "C:\Users\<username>\.sdkman\candidates\groovy"
+    detail: 'sdkman downloads all the sdk at "C:\Users\<username>\.sdkman\candidates"\n
+            example \n
+            if you have installed multiple version of groovy, you will see all the versions at "C:\Users\<username>\.sdkman\candidates\groovy"\n
             we can use a specific version of sdk within the open terminal by using following command'
     link:
     img:
