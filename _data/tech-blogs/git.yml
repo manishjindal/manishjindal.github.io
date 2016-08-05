@@ -6,15 +6,20 @@
     code:
 
 -   layout: Git
-    title: Git Basics - Getting a Git Repository
+    title: Git Basics
     detail: 'You can get a Git project using two main approaches.</br>
              The first takes an existing project or directory and imports it into Git.</br>
              The second clones an existing Git repository from another server.'
     link: 
     img:
-    item1: 'test1'
-    code1: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
-    item2: 'test2'
-    code1: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
-            '
+    heading: 'Initializing a Repository in an Existing Directory'
+    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
+    
+-   layout: Git
+    title: Git Basics
+    detail: 
+    link: 
+    img:
+    heading: 'Cloning an Existing Repository'
+    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
     
