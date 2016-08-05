@@ -30,11 +30,16 @@
    
 
 -   layout: jenkins
-    title: Where jenkins installs the sdk ?
-    detail: 'jenkins downloads all the sdk at "C:\Users\<username>\.jenkins\candidates"</br>
-            example </br>
-            if you have installed multiple version of groovy, you will see all the versions at "C:\Users\<username>\.jenkins\candidates\groovy"</br>
-            we can use a specific version of sdk within the open terminal by using following command'
+    title: Adding New Jenkins Job
+    detail: 'Goto the jenkins job and click on new item'
     link:
-    img:
-    code: "sdk use groovy 2.4.5"
+    img: newitem.png
+    code: 
+
+-   layout: jenkins
+    title: Adding New Jenkins Job
+    detail: 'Enter the job name and select, how you want to create job like New/Copy from Existing'
+    link:
+    img: newitemname.png
+    code: 
+
