@@ -14,6 +14,16 @@ active: How to maintain multiple version of SDK - sdkman
                  <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:black;width:70%">
                         {{blog.code}}
                  </div>
+
+                 {% for posts in blog %}
+                    <ul>
+                        <li>
+                          {{posts.item1}}
+                        </li>
+
+                    </ul>>
+
+                 {% endfor %}
                 <!-- <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> -->
           <!--  </div> -->
           </hr>

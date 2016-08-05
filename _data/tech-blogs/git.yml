@@ -12,6 +12,9 @@
              The second clones an existing Git repository from another server.'
     link: 
     img:
-    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
+    item1: 'test1'
+    code1: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
+    item2: 'test2'
+    code1: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
             '
     
