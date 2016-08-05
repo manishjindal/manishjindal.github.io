@@ -1,0 +1,17 @@
+-   layout: Git
+    title: What is git
+    detail: "Git is a free and open source distributed version control system. </br>Designed to handle everything from small to very large projects with speed and efficiency."
+    link:
+    img:
+    code:
+
+-   layout: Git
+    title: Git Basics - Getting a Git Repository
+    detail: 'You can get a Git project using two main approaches.</br>
+             The first takes an existing project or directory and imports it into Git.</br>
+             The second clones an existing Git repository from another server.'
+    link: 
+    img:
+    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
+            '
+    
