@@ -9,17 +9,12 @@ active: Version Controll Using Git
             <h2><b>What is git</b></h2>
             {% for blog in site.data.tech-blogs.git %}
               {% if blog.title == "What is git" %}
-           <!-- <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important"> -->
-                <ul>
-                  
-                 <li><h4>{{blog.detail}}</h4>
-                 <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
-                 <img src="{{site.baseurl}}/assets/img/git/{{blog.img}}" alt="Norway" width="70%" height="50%">
-                  </li>
-
-                </ul>
-                
-                {% endif %}
+          
+              <h4>{{blog.detail}}</h4>
+              <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
+                 
+              
+              {% endif %}
              {% endfor %}
             </div>
             <hr>
