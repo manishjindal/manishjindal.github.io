@@ -25,8 +25,8 @@
 
 -   layout: sdkman
     title: Basic sdkman commands 
-    detail: http://sdkman.io/usage.html
-    link:
+    detail: 
+    link: http://sdkman.io/usage.html
     img:
     code:
    
