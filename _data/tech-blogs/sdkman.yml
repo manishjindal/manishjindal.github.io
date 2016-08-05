@@ -3,11 +3,9 @@
     detail: SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits.
             It provides a convenient Command Line Interface (CLI) and API for installing, switching, removing and listing Candidates.
    
-        
-
 -   layout: sdkman
     title: How to Install sdkman
-    detail: "$ curl -s "https://get.sdkman.io" | bash"
+    detail: '"$ curl -s "https://get.sdkman.io" | bash"'
     
 
 -   layout: sdkman
@@ -27,4 +25,3 @@ This command will list all the sdk available to download. (like - groovy, gradle
             example 
             if you have installed multiple version of groovy, you will see all the versions at "C:\Users\<username>\.sdkman\candidates\groovy"
             we can use a specific version of sdk within the open terminal by using following command
-   
