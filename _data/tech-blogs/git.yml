@@ -1,6 +1,6 @@
 -   layout: Git
     title: What is git
-    detail: "Git is a free and open source distributed version control system. </br>Designed to handle everything from small to very large projects with speed and efficiency."
+    detail: "Git is a free and open source distributed version control system.Designed to handle everything from small to very large projects with speed and efficiency."
     link:
     img:
     code:
@@ -26,5 +26,7 @@
     link: 
     img:
     heading: 'Cloning an Existing Repository'
-    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
+    code: 'If you want to get a copy of an existing Git repository – for example, a project you’d like to contribute to – the command you need is <b>git clone</b>.
+            You clone a repository with git clone [url]. For example, if you want to clone the Git linkable library called libgit2, you can do so like this:</br>
+            $ git clone https://github.com/libgit2/libgit2'
     
