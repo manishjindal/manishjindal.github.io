@@ -13,7 +13,12 @@
     link: 
     img:
     heading: 'Initializing a Repository in an Existing Directory'
-    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>'
+    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
+            $ git init</br>
+            Now if you want to start version control Add files to git using </br>
+            $ git add <filename></br>
+            <i>example: git add *.c , this will add all the c file in the directory</br>
+            '
     
 -   layout: Git
     title: Git Basics
