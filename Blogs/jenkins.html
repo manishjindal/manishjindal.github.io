@@ -6,14 +6,17 @@ active: Continuous Integration using Jenkins
 
   <div class="w3-row-padding w3-white"> 
             <div>
-            {% for blog in site.data.tech-blogs.sdkman %}
+            
             <b><h2>{{blog.title}}</h2></b>
+            {% for blog in site.data.tech-blogs.sdkman %}
+              { if blog.title == "Adding New Slave"}
            <!-- <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important"> -->
                  <p>{{blog.detail}}</p>
                  <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
                  <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:black;width:70%">
                         {{blog.code}}
                  </div>
+                 <img src="{{site.baseurl}}/assets/img/jenkins{{data.img}}" alt="Norway" style="width:70%" class="w3-hover-opacity">
                 <!-- <p>Solution:- <a href="{{site.baseurl}}/SPOJ%20Solutions/solutions/{{data.download}}" download>Download</a> -->
           <!--  </div> -->
           </hr>

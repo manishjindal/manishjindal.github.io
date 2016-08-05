@@ -1,0 +1,40 @@
+-   layout: jenkins
+    title: Adding New Slave
+    detail: Goto the jenkins job where you want to add new jenkins slave.
+    link:
+    img: manage.png
+    code:
+
+-   layout: jenkins
+    title: Adding New Slave
+    detail: 'Click On Manage Jenkins'
+    link: 
+    img: clickmanage.png
+    code:
+    
+
+-   layout: jenkins
+    title: Adding New Slave
+    detail: 'Click on New Node '
+    link:
+    img: newnode.png
+    code:
+    
+
+-   layout: jenkins
+    title: Adding New Slave
+    detail: Provide Node Name and choose appropriate option Dumb Slave / Copy From Existing Node .
+    link: 
+    img: nodename.png
+    code:
+   
+
+-   layout: jenkins
+    title: Where jenkins installs the sdk ?
+    detail: 'jenkins downloads all the sdk at "C:\Users\<username>\.jenkins\candidates"</br>
+            example </br>
+            if you have installed multiple version of groovy, you will see all the versions at "C:\Users\<username>\.jenkins\candidates\groovy"</br>
+            we can use a specific version of sdk within the open terminal by using following command'
+    link:
+    img:
+    code: "sdk use groovy 2.4.5"
