@@ -15,7 +15,7 @@ active: Continuous Integration using Jenkins
                   
                  <li><h4>{{blog.detail}}</h4>
                  <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
-                 <img src="{{site.baseurl}}/assets/img/jenkins/{{blog.img}}" alt="Norway" style="width:70%">
+                 <img src="{{site.baseurl}}/assets/img/jenkins/{{blog.img}}" alt="Norway" width="70%" height="70%">
                   </li>
 
                 </ul>
@@ -23,9 +23,9 @@ active: Continuous Integration using Jenkins
                 {% endif %}
              {% endfor %}
             </div>
+            <hr>
 
             <div>
-            
             <h2><b>Adding New Jenkins Job</b></h2>
             {% for blog in site.data.tech-blogs.jenkins %}
               {% if blog.title == "Adding New Jenkins Job" %}
