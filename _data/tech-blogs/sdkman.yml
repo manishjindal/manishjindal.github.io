@@ -39,4 +39,4 @@
             we can use a specific version of sdk within the open terminal by using following command'
     link:
     img:
-    code:
+    code: "sdk use groovy 2.4.5"
