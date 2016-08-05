@@ -1,6 +1,6 @@
 -   layout: sdkman
     title: What is sdkman
-    detail: SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits.
+    detail: <b>SDKMAN!</b> is a tool for managing parallel versions of multiple Software Development Kits.
             It provides a convenient Command Line Interface (CLI) and API for installing, switching, removing and listing Candidates.
     link:
     img:
