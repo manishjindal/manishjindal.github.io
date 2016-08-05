@@ -24,9 +24,10 @@ active: Version Controll Using Git
             {% for blog in site.data.tech-blogs.git %}
               {% if blog.title == "Git Basics" %}
            <!-- <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important"> -->
+           <h4>{{blog.detail}}</h4>
            <ul>
               
-                <h4>{{blog.detail}}</h4>
+                
                 <li>
                  <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
                  <h5>{{blog.heading}}</h5>
