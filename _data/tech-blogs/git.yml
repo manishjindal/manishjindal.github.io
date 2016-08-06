@@ -18,7 +18,10 @@
             Now if you want to start version control Add files to git using </br>
             $ git add <filename></br>
             <i>example: git add *.c , this will add all the c file in the directory</br>
-            '
+            Now do the intial commit using following command</br>
+            $ git commint -m "<Commit Message>" </br>
+            <i>example: git commit -m "my first commmit"</i></br>
+            There you go, you repo is now under source controll '
     
 -   layout: Git
     title: Git Basics
