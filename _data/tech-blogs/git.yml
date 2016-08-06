@@ -13,7 +13,7 @@
     link: 
     img:
     heading: 'Initializing a Repository in an Existing Directory'
-             subheading:'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
+    subheading: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
             $ git init</br>
             Now if you want to start version control Add files to git using </br>
             $ git add <filename></br>
