@@ -18,7 +18,7 @@ System was able to check if the person who is accessing account is an intruder o
     subject: Placement Portal
     description: 'Portal to provide automation of the placement related information and activities
 using HTML, CSS, JavaScript, Python, Sqlite, and Web2py.'
-    url: "git-blog.html"
+    url: "git.html"
     tags: 
 
 
