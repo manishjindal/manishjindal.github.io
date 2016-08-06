@@ -13,15 +13,17 @@
     link: 
     img:
     heading: 'Initializing a Repository in an Existing Directory'
-    code: 'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
+             subheading:'If you’re starting to track an existing project in Git, you need to go to the project’s directory and type:</br>
             $ git init</br>
             Now if you want to start version control Add files to git using </br>
             $ git add <filename></br>
-            <i>example: git add *.c , this will add all the c file in the directory</br>
+            This will add all the c file in the directory</br>
             Now do the intial commit using following command</br>
             $ git commint -m "<Commit Message>" </br>
-            <i>example: git commit -m "my first commmit"</i></br>
-            There you go, you repo is now under source controll '
+            There you go, you repo is now under source controll ' 
+    code: '$ git add init </br>
+           $ git add *.c </br>
+           $ git commit -m "my first commit"'
     
 -   layout: Git
     title: Git Basics
@@ -29,6 +31,7 @@
     link: 
     img:
     heading: 'Cloning an Existing Repository'
+    subheading:
     code: 'If you want to get a copy of an existing Git repository – for example, a project you’d like to contribute to – the command you need is <b>git clone</b>.
             You clone a repository with git clone [url]. For example, if you want to clone the Git linkable library called libgit2, you can do so like this:</br>
             $ git clone https://github.com/libgit2/libgit2'
