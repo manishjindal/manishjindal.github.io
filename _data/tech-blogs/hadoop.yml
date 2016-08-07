@@ -1,6 +1,6 @@
 -   layout: Hadoop
     title: Hadoop Single Node Installation
-    detail: " we'll install a single-node Hadoop cluster backed by the Hadoop Distributed File System on Ubuntu."
+    detail: " we will install a single-node Hadoop cluster backed by the Hadoop Distributed File System on Ubuntu."
     link:
     img:
     code:
