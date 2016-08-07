@@ -27,7 +27,7 @@
             OpenJDK 64-Bit Server VM (build 24.65-b04, mixed mode)</br>  '
     
 -   layout: Hadoop
-    title: Adding a dedicated Hadoop user
+    title: 'Adding a dedicated Hadoop user'
     detail: 'This step is opotional, in case if you want a separate user for hadoop'
     link: 
     img:
@@ -38,10 +38,10 @@
             Done.</br></br>
 
             k@laptop:~$ sudo adduser --ingroup hadoop hduser</br>
-            Adding user `hduser' ...</br>
-            Adding new user `hduser' (1001) with group `hadoop' ...</br>
-            Creating home directory `/home/hduser' ...</br>
-            Copying files from `/etc/skel' ...</br>
+            Adding user hduser ...</br>
+            Adding new user hduser (1001) with group hadoop ...</br>
+            Creating home directory /home/hduser ...</br>
+            Copying files from /etc/skel ...</br>
             Enter new UNIX password </br>
             Retype new UNIX password </br>
             passwd password updated successfully</br>
