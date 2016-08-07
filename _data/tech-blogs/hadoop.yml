@@ -23,8 +23,8 @@
 
             k@laptop ~$ java -version</br>
             java version "1.7.0_65"</br>
-            OpenJDK Runtime Environment (IcedTea 2.5.3) (7u71-2.5.3-0ubuntu0.14.04.1)</br>
-            OpenJDK 64-Bit Server VM (build 24.65-b04, mixed mode)</br>  '
+            OpenJDK Runtime Environment ..</br>
+            OpenJDK 64-Bit Server VM ..</br>  '
     
 -   layout: Hadoop
     title: 'Adding a dedicated Hadoop user'
