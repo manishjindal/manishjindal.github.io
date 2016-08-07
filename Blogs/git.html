@@ -24,7 +24,7 @@ active: Version Control Using Git
             {% for blog in site.data.tech-blogs.git %}
               {% if blog.title == "Git Basics" %}
            <!-- <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important"> -->
-           <h4>{{blog.detail}}</h4>
+           <h2>{{blog.detail}}</h2>
            <ul>
               
                 
@@ -32,7 +32,8 @@ active: Version Control Using Git
                  <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
                  <h5>{{blog.heading}}</h5>
                  <p>{{blog.subheading}}</p>
-                  <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:black;width:70%">
+                 <div class="w3-container w3-light-grey w3-leftbar w3-border-blue">
+                  <!--<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:black;width:70%"> -->
                         {{blog.code}}
                  </div>
               </li>
