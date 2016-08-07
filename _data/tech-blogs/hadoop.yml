@@ -10,18 +10,18 @@
     detail: 'Hadoop framework is written in Java'
     link: 
     img:
-    heading: ''
-    subheading: '' 
-    code: 'k@laptop:~$ cd ~</br>
+    heading: 
+    subheading:  
+    code: 'k@laptop ~$ cd ~</br>
 
         # Update the source list</br>
-            k@laptop:~$ sudo apt-get update</br></br>
+            k@laptop ~$ sudo apt-get update</br></br>
 
         # The OpenJDK project is the default version of Java </br>
         # that is provided from a supported Ubuntu repository.</br>
-            k@laptop:~$ sudo apt-get install default-jdk</br></br>
+            k@laptop ~$ sudo apt-get install default-jdk</br></br>
 
-            k@laptop:~$ java -version</br>
+            k@laptop ~$ java -version</br>
             java version "1.7.0_65"</br>
             OpenJDK Runtime Environment (IcedTea 2.5.3) (7u71-2.5.3-0ubuntu0.14.04.1)</br>
             OpenJDK 64-Bit Server VM (build 24.65-b04, mixed mode)</br>  '
@@ -31,13 +31,13 @@
     detail: 'This step is opotional, in case if you want a separate user for hadoop'
     link: 
     img:
-    heading: ''
+    heading: 
     subheading:
-    code: 'k@laptop:~$ sudo addgroup hadoop</br>
+    code: 'k@laptop ~$ sudo addgroup hadoop</br>
             Adding group hadoop (GID 1002) ...</br>
             Done.</br></br>
 
-            k@laptop:~$ sudo adduser --ingroup hadoop hduser</br>
+            k@laptop ~$ sudo adduser --ingroup hadoop hduser</br>
             Adding user hduser ...</br>
             Adding new user hduser (1001) with group hadoop ...</br>
             Creating home directory /home/hduser ...</br>
@@ -57,18 +57,18 @@
 -   layout: Hadoop
     title: Installing SSH
     detail: 'ssh has two main components:</br>
-            1. <b>ssh :</b> The command we use to connect to remote machines - the client.</br>
-            2. <b>sshd :</b> The daemon that is running on the server and allows clients to connect to the server.</br>
+            1. <b>ssh </b> The command we use to connect to remote machines - the client.</br>
+            2. <b>sshd </b> The daemon that is running on the server and allows clients to connect to the server.</br>
             The ssh is pre-enabled on Linux, but in order to start sshd daemon, we need to install ssh first. Use this command to do that :</br>
             This will install ssh on our machine. If we get something similar to the following, we can think it is setup properly:'
     link: 
     img:
-    heading: ''
+    heading: 
     subheading:
-    code: 'k@laptop:~$ sudo apt-get install ssh</br>
-            k@laptop:~$ which ssh</br>
+    code: 'k@laptop ~$ sudo apt-get install ssh</br>
+            k@laptop ~$ which ssh</br>
             /usr/bin/ssh</br>
                     </br>
-            k@laptop:~$ which sshd</br>
+            k@laptop ~$ which sshd</br>
             /usr/sbin/sshd'</br>
     
