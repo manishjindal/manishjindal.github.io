@@ -1,0 +1,45 @@
+---
+layout: blogs_layout
+active: Version Control Using Git
+---
+
+
+  <div class="w3-row-padding w3-white w3-border"> 
+            <div>
+            <h2><b>What is git</b></h2>
+            {% for blog in site.data.tech-blogs.git %}
+              {% if blog.title == "What is git" %}
+          
+              <h4>{{blog.detail}}</h4>
+              <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
+                 
+              
+              {% endif %}
+             {% endfor %}
+            </div>
+            <hr>
+
+            <div>
+            <h2><b>Git Basics - Getting a Git Repository</b></h2>
+            {% for blog in site.data.tech-blogs.git %}
+              {% if blog.title == "Git Basics" %}
+           <!-- <div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:#478!important"> -->
+           <h2>{{blog.detail}}</h2>
+           <ul>
+              
+                
+                <li>
+                 <p><b><i><a href="{{blog.link}}">{{blog.link}}</a></i></b></p>
+                 <h5>{{blog.heading}}</h5>
+                 <p>{{blog.subheading}}</p>
+                 <div class="w3-container w3-light-grey w3-leftbar w3-border-grey">
+                  <!--<div class="w3-container w3-border w3-hover-shadow" style="color:white;background-color:black;width:70%"> -->
+                        {{blog.code}}
+                 </div>
+              </li>
+            </ul>     
+                {% endif %}
+             {% endfor %}
+            </div>
+            <hr>
+  </div>
