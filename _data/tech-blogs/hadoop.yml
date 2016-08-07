@@ -7,7 +7,7 @@
 
 -   layout: Hadoop
     title: Installing Java
-    detail: 'Hadoop framework is written in Java!!'
+    detail: 'Hadoop framework is written in Java'
     link: 
     img:
     heading: ''
@@ -24,17 +24,17 @@
             k@laptop:~$ java -version</br>
             java version "1.7.0_65"</br>
             OpenJDK Runtime Environment (IcedTea 2.5.3) (7u71-2.5.3-0ubuntu0.14.04.1)</br>
-            OpenJDK 64-Bit Server VM (build 24.65-b04, mixed mode)  '</br>
+            OpenJDK 64-Bit Server VM (build 24.65-b04, mixed mode)</br>  '
     
 -   layout: Hadoop
     title: Adding a dedicated Hadoop user
-    detail: This step is opotional, in case if you want a separate user for hadoop
+    detail: 'This step is opotional, in case if you want a separate user for hadoop'
     link: 
     img:
     heading: ''
     subheading:
     code: 'k@laptop:~$ sudo addgroup hadoop</br>
-            Adding group `hadoop' (GID 1002) ...</br>
+            Adding group hadoop (GID 1002) ...</br>
             Done.</br></br>
 
             k@laptop:~$ sudo adduser --ingroup hadoop hduser</br>
