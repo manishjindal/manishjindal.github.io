@@ -12,7 +12,7 @@
     img:
     heading: 
     subheading:  
-    code: ''
+    code: 
     
 -   layout: Hadoop
     title: 'Adding a dedicated Hadoop user'
