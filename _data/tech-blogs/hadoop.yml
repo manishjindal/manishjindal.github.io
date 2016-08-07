@@ -15,8 +15,8 @@
     code: 
     
 -   layout: Hadoop
-    title: 'Adding a dedicated Hadoop user'
-    detail: 'This step is opotional, in case if you want a separate user for hadoop'
+    title: Adding a dedicated Hadoop user
+    detail: 'This step is opotional in case if you want a separate user for hadoop'
     link: 
     img:
     heading: 
