@@ -12,19 +12,7 @@
     img:
     heading: 
     subheading:  
-    code: 'cd ~</br>
-
-        # Update the source list</br>
-          sudo apt-get update</br></br>
-
-        # The OpenJDK project is the default version of Java </br>
-        # that is provided from a supported Ubuntu repository.</br>
-           sudo apt-get install default-jdk</br></br>
-
-           java -version</br>
-            java version "1.7.0_65"</br>
-            OpenJDK Runtime Environment ..</br>
-            OpenJDK 64-Bit Server VM ..</br>  '
+    code: ''
     
 -   layout: Hadoop
     title: 'Adding a dedicated Hadoop user'
